@@ -15,6 +15,9 @@
 		7519C2001ED162DC00A7E4B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7519C1FE1ED162DC00A7E4B5 /* LaunchScreen.storyboard */; };
 		7519C20B1ED162DC00A7E4B5 /* MyCodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7519C20A1ED162DC00A7E4B5 /* MyCodeTests.m */; };
 		7519C2161ED162DC00A7E4B5 /* MyCodeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7519C2151ED162DC00A7E4B5 /* MyCodeUITests.m */; };
+		75B88FD31ED1685200690623 /* CardNameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B88FD11ED1685200690623 /* CardNameController.m */; };
+		75B88FD41ED1685200690623 /* CardNameController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75B88FD21ED1685200690623 /* CardNameController.xib */; };
+		75B88FD61ED16D9100690623 /* bank.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75B88FD51ED16D9100690623 /* bank.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,10 @@
 		7519C2111ED162DC00A7E4B5 /* MyCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7519C2151ED162DC00A7E4B5 /* MyCodeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCodeUITests.m; sourceTree = "<group>"; };
 		7519C2171ED162DC00A7E4B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75B88FD01ED1685200690623 /* CardNameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardNameController.h; sourceTree = "<group>"; };
+		75B88FD11ED1685200690623 /* CardNameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardNameController.m; sourceTree = "<group>"; };
+		75B88FD21ED1685200690623 /* CardNameController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardNameController.xib; sourceTree = "<group>"; };
+		75B88FD51ED16D9100690623 /* bank.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = bank.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +108,7 @@
 		7519C1EF1ED162DC00A7E4B5 /* MyCode */ = {
 			isa = PBXGroup;
 			children = (
+				75B88FCD1ED1681600690623 /* 银行卡名称 */,
 				7519C1F31ED162DC00A7E4B5 /* AppDelegate.h */,
 				7519C1F41ED162DC00A7E4B5 /* AppDelegate.m */,
 				7519C1F61ED162DC00A7E4B5 /* ViewController.h */,
@@ -138,6 +146,17 @@
 				7519C2171ED162DC00A7E4B5 /* Info.plist */,
 			);
 			path = MyCodeUITests;
+			sourceTree = "<group>";
+		};
+		75B88FCD1ED1681600690623 /* 银行卡名称 */ = {
+			isa = PBXGroup;
+			children = (
+				75B88FD51ED16D9100690623 /* bank.plist */,
+				75B88FD01ED1685200690623 /* CardNameController.h */,
+				75B88FD11ED1685200690623 /* CardNameController.m */,
+				75B88FD21ED1685200690623 /* CardNameController.xib */,
+			);
+			path = "银行卡名称";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +271,8 @@
 				7519C2001ED162DC00A7E4B5 /* LaunchScreen.storyboard in Resources */,
 				7519C1FD1ED162DC00A7E4B5 /* Assets.xcassets in Resources */,
 				7519C1FB1ED162DC00A7E4B5 /* Main.storyboard in Resources */,
+				75B88FD41ED1685200690623 /* CardNameController.xib in Resources */,
+				75B88FD61ED16D9100690623 /* bank.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +299,7 @@
 			files = (
 				7519C1F81ED162DC00A7E4B5 /* ViewController.m in Sources */,
 				7519C1F51ED162DC00A7E4B5 /* AppDelegate.m in Sources */,
+				75B88FD31ED1685200690623 /* CardNameController.m in Sources */,
 				7519C1F21ED162DC00A7E4B5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,6 +538,7 @@
 				7519C21C1ED162DC00A7E4B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7519C21D1ED162DC00A7E4B5 /* Build configuration list for PBXNativeTarget "MyCodeTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +547,7 @@
 				7519C21F1ED162DC00A7E4B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7519C2201ED162DC00A7E4B5 /* Build configuration list for PBXNativeTarget "MyCodeUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +556,7 @@
 				7519C2221ED162DC00A7E4B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

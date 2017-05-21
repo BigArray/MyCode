@@ -2,7 +2,7 @@
 //  ViewController.m
 //  MyCode
 //
-//  Created by 张振飞 on 2017/5/21.
+//  Created by 张振飞 on 2017/2/1.
 //  Copyright © 2017年 zzf. All rights reserved.
 //
 
@@ -10,6 +10,7 @@
 #define Height [UIScreen mainScreen].bounds.size.height
 
 #import "ViewController.h"
+#import "CardNameController.h"
 
 
 
@@ -26,8 +27,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _nameArray = [[NSMutableArray alloc] initWithObjects:@"网络请求", @"二维码", @"rsa签名加密解密", @"", @"", nil];
+    self.title = @"封装";
+    self.navigationController.navigationBar.translucent = YES;
     
+    _nameArray = [[NSMutableArray alloc] initWithObjects:@"网络请求", @"二维码", @"rsa签名加密解密", @"银行卡名称", nil];
     
     [self createView];
 }
@@ -67,6 +70,14 @@
             
             break;
         case 2:
+            
+            break;
+        case 3:
+        {
+            NSLog(@"--银行卡名称--");
+            CardNameController *cnVC = [[CardNameController alloc] init];
+            [self.navigationController pushViewController:cnVC animated:YES];
+        }
             
             break;
             

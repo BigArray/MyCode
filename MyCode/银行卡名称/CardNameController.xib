@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardNameController">
+            <connections>
+                <outlet property="cardName" destination="a35-EH-Fjh" id="3Ti-3h-XqV"/>
+                <outlet property="cardNum" destination="exJ-wE-i0P" id="nM9-lv-emH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入卡号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="exJ-wE-i0P">
+                    <rect key="frame" x="77.5" y="100" width="220" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="5Yo-Jy-4a1"/>
+                        <constraint firstAttribute="width" constant="220" id="Fix-43-fCT"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="XDE-yo-rGb"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJW-pX-q9T">
+                    <rect key="frame" x="137" y="190" width="100" height="50"/>
+                    <color key="backgroundColor" red="1" green="0.12676377255391691" blue="0.050570846915693801" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="F7w-ya-RDU"/>
+                        <constraint firstAttribute="width" constant="100" id="gVe-S8-MG2"/>
+                    </constraints>
+                    <state key="normal" title="确  定">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="confirmBtn:" destination="-1" eventType="touchUpInside" id="rrV-Bl-cVC"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a35-EH-Fjh">
+                    <rect key="frame" x="187" y="290" width="0.0" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="BdG-ra-xgn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="exJ-wE-i0P" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="2fC-lr-eBh"/>
+                <constraint firstItem="a35-EH-Fjh" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="HvJ-7y-liV"/>
+                <constraint firstItem="a35-EH-Fjh" firstAttribute="top" secondItem="TJW-pX-q9T" secondAttribute="bottom" constant="50" id="Ufl-Cn-ltK"/>
+                <constraint firstItem="TJW-pX-q9T" firstAttribute="top" secondItem="exJ-wE-i0P" secondAttribute="bottom" constant="40" id="e4u-WK-g6h"/>
+                <constraint firstItem="exJ-wE-i0P" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="e9G-IN-1db"/>
+                <constraint firstItem="TJW-pX-q9T" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="jhs-61-ejN"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
