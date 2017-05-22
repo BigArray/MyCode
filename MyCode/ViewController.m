@@ -10,8 +10,9 @@
 #define Height [UIScreen mainScreen].bounds.size.height
 
 #import "ViewController.h"
-#import "CardNameController.h"
 #import "HttpRequestController.h"
+#import "RSAController.h"
+#import "CardNameController.h"
 
 
 
@@ -75,6 +76,10 @@
             
             break;
         case 2://rsa
+        {
+            RSAController *rsaVC = [[RSAController alloc] init];
+            [self.navigationController pushViewController:rsaVC animated:YES];
+        }
             
             break;
         case 3://银行卡名称
