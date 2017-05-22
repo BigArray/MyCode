@@ -2,7 +2,7 @@
 //  HttpRequestController.h
 //  MyCode
 //
-//  Created by 中付支付 on 2017/5/22.
+//  Created by 张振飞 on 2017/5/22.
 //  Copyright © 2017年 zzf. All rights reserved.
 //
 
