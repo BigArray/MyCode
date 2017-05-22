@@ -11,6 +11,7 @@
 
 #import "ViewController.h"
 #import "CardNameController.h"
+#import "HttpRequestController.h"
 
 
 
@@ -63,16 +64,20 @@
     NSInteger num = indexPath.row;
     //跳转到不同页面
     switch (num) {
-        case 0:
+        case 0://网络请求
+        {
+            HttpRequestController *hrVC = [[HttpRequestController alloc] init];
+            [self.navigationController pushViewController:hrVC animated:YES];
+        }
             
             break;
-        case 1:
+        case 1://二维码
             
             break;
-        case 2:
+        case 2://rsa
             
             break;
-        case 3:
+        case 3://银行卡名称
         {
             NSLog(@"--银行卡名称--");
             CardNameController *cnVC = [[CardNameController alloc] init];

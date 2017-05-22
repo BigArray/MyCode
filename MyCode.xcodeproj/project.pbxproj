@@ -20,6 +20,8 @@
 		75B88FD41ED1685200690623 /* CardNameController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75B88FD21ED1685200690623 /* CardNameController.xib */; };
 		75B88FD61ED16D9100690623 /* bank.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75B88FD51ED16D9100690623 /* bank.plist */; };
 		F84175811ED2746D00C65435 /* HttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F84175801ED2746D00C65435 /* HttpTool.m */; };
+		F84175851ED27F9A00C65435 /* HttpRequestController.m in Sources */ = {isa = PBXBuildFile; fileRef = F84175831ED27F9A00C65435 /* HttpRequestController.m */; };
+		F84175861ED27F9A00C65435 /* HttpRequestController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F84175841ED27F9A00C65435 /* HttpRequestController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,9 @@
 		D2F757463940D678AA4B2CA3 /* Pods-MyCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCode.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyCode/Pods-MyCode.release.xcconfig"; sourceTree = "<group>"; };
 		F841757F1ED2746D00C65435 /* HttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpTool.h; sourceTree = "<group>"; };
 		F84175801ED2746D00C65435 /* HttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpTool.m; sourceTree = "<group>"; };
+		F84175821ED27F9A00C65435 /* HttpRequestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequestController.h; sourceTree = "<group>"; };
+		F84175831ED27F9A00C65435 /* HttpRequestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequestController.m; sourceTree = "<group>"; };
+		F84175841ED27F9A00C65435 /* HttpRequestController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HttpRequestController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +197,9 @@
 			children = (
 				F841757F1ED2746D00C65435 /* HttpTool.h */,
 				F84175801ED2746D00C65435 /* HttpTool.m */,
+				F84175821ED27F9A00C65435 /* HttpRequestController.h */,
+				F84175831ED27F9A00C65435 /* HttpRequestController.m */,
+				F84175841ED27F9A00C65435 /* HttpRequestController.xib */,
 			);
 			path = "网络请求";
 			sourceTree = "<group>";
@@ -313,6 +321,7 @@
 				7519C1FB1ED162DC00A7E4B5 /* Main.storyboard in Resources */,
 				75B88FD41ED1685200690623 /* CardNameController.xib in Resources */,
 				75B88FD61ED16D9100690623 /* bank.plist in Resources */,
+				F84175861ED27F9A00C65435 /* HttpRequestController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +395,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7519C1F81ED162DC00A7E4B5 /* ViewController.m in Sources */,
+				F84175851ED27F9A00C65435 /* HttpRequestController.m in Sources */,
 				7519C1F51ED162DC00A7E4B5 /* AppDelegate.m in Sources */,
 				75B88FD31ED1685200690623 /* CardNameController.m in Sources */,
 				7519C1F21ED162DC00A7E4B5 /* main.m in Sources */,

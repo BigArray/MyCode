@@ -53,6 +53,7 @@
     manager.requestSerializer = [AFJSONRequestSerializer serializer];
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/html",@"text/json",@"text/javascript",@"text/plain", @"application/html", nil];
     
+    //https 官方证书不用管 非官方证书要添加
     AFSecurityPolicy *securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];
     [securityPolicy setValidatesDomainName:NO];
     [securityPolicy setAllowInvalidCertificates:YES];
