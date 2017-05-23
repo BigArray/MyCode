@@ -13,6 +13,7 @@
 #import "HttpRequestController.h"
 #import "RSAController.h"
 #import "CardNameController.h"
+#import "StringRegexController.h"
 
 
 
@@ -32,7 +33,7 @@
     self.title = @"封装";
     self.navigationController.navigationBar.translucent = YES;
     
-    _nameArray = [[NSMutableArray alloc] initWithObjects:@"网络请求", @"二维码", @"rsa签名加密解密", @"银行卡名称", nil];
+    _nameArray = [[NSMutableArray alloc] initWithObjects:@"网络请求", @"二维码", @"rsa签名加密解密", @"银行卡名称", @"字符串正则判断", nil];
     
     [self createView];
 }
@@ -73,6 +74,9 @@
             
             break;
         case 1://二维码
+        {
+            
+        }
             
             break;
         case 2://rsa
@@ -90,6 +94,11 @@
         }
             
             break;
+        case 4://字符串正则判断
+        {
+            StringRegexController *srVC = [[StringRegexController alloc] init];
+            [self.navigationController pushViewController:srVC animated:YES];
+        }
             
         default:
             break;

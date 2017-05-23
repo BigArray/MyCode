@@ -19,6 +19,9 @@
 		75B88FD31ED1685200690623 /* CardNameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B88FD11ED1685200690623 /* CardNameController.m */; };
 		75B88FD41ED1685200690623 /* CardNameController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75B88FD21ED1685200690623 /* CardNameController.xib */; };
 		75B88FD61ED16D9100690623 /* bank.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75B88FD51ED16D9100690623 /* bank.plist */; };
+		F82954B51ED41115004457C3 /* NSString+RegexJudge.m in Sources */ = {isa = PBXBuildFile; fileRef = F82954B41ED41115004457C3 /* NSString+RegexJudge.m */; };
+		F82954B91ED41466004457C3 /* StringRegexController.m in Sources */ = {isa = PBXBuildFile; fileRef = F82954B71ED41466004457C3 /* StringRegexController.m */; };
+		F82954BA1ED41466004457C3 /* StringRegexController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F82954B81ED41466004457C3 /* StringRegexController.xib */; };
 		F84175811ED2746D00C65435 /* HttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F84175801ED2746D00C65435 /* HttpTool.m */; };
 		F84175851ED27F9A00C65435 /* HttpRequestController.m in Sources */ = {isa = PBXBuildFile; fileRef = F84175831ED27F9A00C65435 /* HttpRequestController.m */; };
 		F84175861ED27F9A00C65435 /* HttpRequestController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F84175841ED27F9A00C65435 /* HttpRequestController.xib */; };
@@ -72,6 +75,11 @@
 		75B88FD51ED16D9100690623 /* bank.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = bank.plist; sourceTree = "<group>"; };
 		77F9558A05E453B5CAEDEA73 /* libPods-MyCode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyCode.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F757463940D678AA4B2CA3 /* Pods-MyCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCode.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyCode/Pods-MyCode.release.xcconfig"; sourceTree = "<group>"; };
+		F82954B31ED41115004457C3 /* NSString+RegexJudge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RegexJudge.h"; sourceTree = "<group>"; };
+		F82954B41ED41115004457C3 /* NSString+RegexJudge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RegexJudge.m"; sourceTree = "<group>"; };
+		F82954B61ED41466004457C3 /* StringRegexController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringRegexController.h; sourceTree = "<group>"; };
+		F82954B71ED41466004457C3 /* StringRegexController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringRegexController.m; sourceTree = "<group>"; };
+		F82954B81ED41466004457C3 /* StringRegexController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StringRegexController.xib; sourceTree = "<group>"; };
 		F841757F1ED2746D00C65435 /* HttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpTool.h; sourceTree = "<group>"; };
 		F84175801ED2746D00C65435 /* HttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpTool.m; sourceTree = "<group>"; };
 		F84175821ED27F9A00C65435 /* HttpRequestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequestController.h; sourceTree = "<group>"; };
@@ -226,6 +234,7 @@
 		7519C1EF1ED162DC00A7E4B5 /* MyCode */ = {
 			isa = PBXGroup;
 			children = (
+				F82954B21ED410D0004457C3 /* 字符串正则判断 */,
 				F84175871ED28AC500C65435 /* RSA签名加密解密 */,
 				F841757E1ED2732100C65435 /* 网络请求 */,
 				75B88FCD1ED1681600690623 /* 银行卡名称 */,
@@ -286,6 +295,18 @@
 				D2F757463940D678AA4B2CA3 /* Pods-MyCode.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F82954B21ED410D0004457C3 /* 字符串正则判断 */ = {
+			isa = PBXGroup;
+			children = (
+				F82954B31ED41115004457C3 /* NSString+RegexJudge.h */,
+				F82954B41ED41115004457C3 /* NSString+RegexJudge.m */,
+				F82954B61ED41466004457C3 /* StringRegexController.h */,
+				F82954B71ED41466004457C3 /* StringRegexController.m */,
+				F82954B81ED41466004457C3 /* StringRegexController.xib */,
+			);
+			path = "字符串正则判断";
 			sourceTree = "<group>";
 		};
 		F841757E1ED2732100C65435 /* 网络请求 */ = {
@@ -529,6 +550,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F82954BA1ED41466004457C3 /* StringRegexController.xib in Resources */,
 				F84175E71ED28CF700C65435 /* RSAController.xib in Resources */,
 				7519C2001ED162DC00A7E4B5 /* LaunchScreen.storyboard in Resources */,
 				7519C1FD1ED162DC00A7E4B5 /* Assets.xcassets in Resources */,
@@ -610,7 +632,9 @@
 			files = (
 				7519C1F81ED162DC00A7E4B5 /* ViewController.m in Sources */,
 				F84175E21ED28AFB00C65435 /* RSAHandler.m in Sources */,
+				F82954B51ED41115004457C3 /* NSString+RegexJudge.m in Sources */,
 				F84175851ED27F9A00C65435 /* HttpRequestController.m in Sources */,
+				F82954B91ED41466004457C3 /* StringRegexController.m in Sources */,
 				7519C1F51ED162DC00A7E4B5 /* AppDelegate.m in Sources */,
 				F84175DE1ED28AC500C65435 /* NSData+Base64.m in Sources */,
 				F84175DF1ED28AC500C65435 /* NSString+Base64.m in Sources */,

@@ -53,10 +53,15 @@
     manager.requestSerializer = [AFJSONRequestSerializer serializer];
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/html",@"text/json",@"text/javascript",@"text/plain", @"application/html", nil];
     
-    //https 官方证书不用管 非官方证书要添加
+    /**
+     AFSecurityPolicy分三种验证模式：
+     AFSSLPinningModeNone:只是验证证书是否在信任列表中
+     AFSSLPinningModeCertificate：该模式会验证证书是否在信任列表中，然后再对比服务端证书和客户端证书是否一致
+     AFSSLPinningModePublicKey：只验证服务端证书与客户端证书的公钥是否一致
+     */
     AFSecurityPolicy *securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];
-    [securityPolicy setValidatesDomainName:NO];
-    [securityPolicy setAllowInvalidCertificates:YES];
+    [securityPolicy setValidatesDomainName:NO];//是否需要验证域名，默认YES
+    [securityPolicy setAllowInvalidCertificates:YES];//是否允许使用自签名证书
     
     [manager setSecurityPolicy:securityPolicy];
     
