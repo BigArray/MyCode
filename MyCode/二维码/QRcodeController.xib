@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QRcodeController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vqG-tg-fmV">
+                    <rect key="frame" x="148.5" y="100" width="77" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="E7a-cs-lUQ"/>
+                    </constraints>
+                    <state key="normal" title="扫描二维码"/>
+                    <connections>
+                        <action selector="scanQrcode:" destination="-1" eventType="touchUpInside" id="sN0-cV-3EY"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TOP-wL-EIn">
+                    <rect key="frame" x="148.5" y="200" width="77" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="yeV-Xo-X0g"/>
+                    </constraints>
+                    <state key="normal" title="生成二维码"/>
+                    <connections>
+                        <action selector="generateQrcode:" destination="-1" eventType="touchUpInside" id="qeK-c2-9GF"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="TOP-wL-EIn" firstAttribute="top" secondItem="vqG-tg-fmV" secondAttribute="bottom" constant="50" id="EVZ-p7-2lN"/>
+                <constraint firstItem="vqG-tg-fmV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="HJw-7z-t1Y"/>
+                <constraint firstItem="TOP-wL-EIn" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="l67-3O-mmd"/>
+                <constraint firstItem="vqG-tg-fmV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="pl2-FU-SON"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

@@ -11,6 +11,7 @@
 
 #import "ViewController.h"
 #import "HttpRequestController.h"
+#import "QRcodeController.h"
 #import "RSAController.h"
 #import "CardNameController.h"
 #import "StringRegexController.h"
@@ -75,7 +76,8 @@
             break;
         case 1://二维码
         {
-            
+            QRcodeController *qrVC = [[QRcodeController alloc] init];
+            [self.navigationController pushViewController:qrVC animated:YES];
         }
             
             break;
