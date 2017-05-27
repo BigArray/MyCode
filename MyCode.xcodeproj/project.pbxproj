@@ -49,6 +49,37 @@
 		F84175E71ED28CF700C65435 /* RSAController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F84175E51ED28CF700C65435 /* RSAController.xib */; };
 		F84C79451ED90D9800C28045 /* RollerCoasterController.m in Sources */ = {isa = PBXBuildFile; fileRef = F84C79431ED90D9800C28045 /* RollerCoasterController.m */; };
 		F84C79461ED90D9800C28045 /* RollerCoasterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F84C79441ED90D9800C28045 /* RollerCoasterController.xib */; };
+		F84C79681ED9643D00C28045 /* 上海农商银行@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F84C79491ED9643D00C28045 /* 上海农商银行@2x.png */; };
+		F84C79691ED9643D00C28045 /* 东亚银行@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F84C794A1ED9643D00C28045 /* 东亚银行@2x.png */; };
+		F84C796A1ED9643D00C28045 /* 中信银行@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F84C794B1ED9643D00C28045 /* 中信银行@2x.png */; };
+		F84C796B1ED9643D00C28045 /* 农业银行@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F84C794C1ED9643D00C28045 /* 农业银行@2x.png */; };
+		F84C796C1ED9643D00C28045 /* 工商银行@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F84C794D1ED9643D00C28045 /* 工商银行@2x.png */; };
+		F84C796D1ED9643D00C28045 /* 建设银行@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F84C794E1ED9643D00C28045 /* 建设银行@2x.png */; };
+		F84C796E1ED9643D00C28045 /* 民生银行@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F84C794F1ED9643D00C28045 /* 民生银行@2x.png */; };
+		F84C796F1ED9643D00C28045 /* 邮政储蓄银行@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F84C79501ED9643D00C28045 /* 邮政储蓄银行@2x.png */; };
+		F84C79701ED9643D00C28045 /* 中国银行@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F84C79511ED9643D00C28045 /* 中国银行@2x.png */; };
+		F84C79711ED9643D00C28045 /* 交通银行@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F84C79521ED9643D00C28045 /* 交通银行@2x.png */; };
+		F84C79721ED9643D00C28045 /* 光大银行@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F84C79531ED9643D00C28045 /* 光大银行@2x.png */; };
+		F84C79731ED9643D00C28045 /* 兴业银行@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F84C79541ED9643D00C28045 /* 兴业银行@2x.png */; };
+		F84C79741ED9643D00C28045 /* 其他银行@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F84C79551ED9643D00C28045 /* 其他银行@2x.png */; };
+		F84C79751ED9643D00C28045 /* 勾选@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F84C79561ED9643D00C28045 /* 勾选@2x.png */; };
+		F84C79761ED9643D00C28045 /* 北京银行@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F84C79571ED9643D00C28045 /* 北京银行@2x.png */; };
+		F84C79771ED9643D00C28045 /* 华夏银行@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F84C79581ED9643D00C28045 /* 华夏银行@2x.png */; };
+		F84C79781ED9643D00C28045 /* 南京银行@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F84C79591ED9643D00C28045 /* 南京银行@2x.png */; };
+		F84C79791ED9643D00C28045 /* 宁波银行@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F84C795A1ED9643D00C28045 /* 宁波银行@2x.png */; };
+		F84C797A1ED9643D00C28045 /* 平安银行@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F84C795B1ED9643D00C28045 /* 平安银行@2x.png */; };
+		F84C797B1ED9643D00C28045 /* 广东省农村信用社@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F84C795C1ED9643D00C28045 /* 广东省农村信用社@2x.png */; };
+		F84C797C1ED9643D00C28045 /* 广发银行@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F84C795D1ED9643D00C28045 /* 广发银行@2x.png */; };
+		F84C797D1ED9643D00C28045 /* 广州银行@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F84C795E1ED9643D00C28045 /* 广州银行@2x.png */; };
+		F84C797E1ED9643D00C28045 /* 成都银行@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F84C795F1ED9643D00C28045 /* 成都银行@2x.png */; };
+		F84C797F1ED9643D00C28045 /* 招商银行@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F84C79601ED9643D00C28045 /* 招商银行@2x.png */; };
+		F84C79801ED9643D00C28045 /* 普中市商业银行@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F84C79611ED9643D00C28045 /* 普中市商业银行@2x.png */; };
+		F84C79811ED9643D00C28045 /* 汉口银行@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F84C79621ED9643D00C28045 /* 汉口银行@2x.png */; };
+		F84C79821ED9643D00C28045 /* 江苏银行@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F84C79631ED9643D00C28045 /* 江苏银行@2x.png */; };
+		F84C79831ED9643D00C28045 /* 浦发银行@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F84C79641ED9643D00C28045 /* 浦发银行@2x.png */; };
+		F84C79841ED9643D00C28045 /* 添加.png in Resources */ = {isa = PBXBuildFile; fileRef = F84C79651ED9643D00C28045 /* 添加.png */; };
+		F84C79851ED9643D00C28045 /* 渤海银行@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F84C79661ED9643D00C28045 /* 渤海银行@2x.png */; };
+		F84C79861ED9643D00C28045 /* 温州银行@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F84C79671ED9643D00C28045 /* 温州银行@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -217,6 +248,37 @@
 		F84C79421ED90D9800C28045 /* RollerCoasterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RollerCoasterController.h; sourceTree = "<group>"; };
 		F84C79431ED90D9800C28045 /* RollerCoasterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RollerCoasterController.m; sourceTree = "<group>"; };
 		F84C79441ED90D9800C28045 /* RollerCoasterController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RollerCoasterController.xib; sourceTree = "<group>"; };
+		F84C79491ED9643D00C28045 /* 上海农商银行@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "上海农商银行@2x.png"; sourceTree = "<group>"; };
+		F84C794A1ED9643D00C28045 /* 东亚银行@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "东亚银行@2x.png"; sourceTree = "<group>"; };
+		F84C794B1ED9643D00C28045 /* 中信银行@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "中信银行@2x.png"; sourceTree = "<group>"; };
+		F84C794C1ED9643D00C28045 /* 农业银行@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "农业银行@2x.png"; sourceTree = "<group>"; };
+		F84C794D1ED9643D00C28045 /* 工商银行@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "工商银行@2x.png"; sourceTree = "<group>"; };
+		F84C794E1ED9643D00C28045 /* 建设银行@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "建设银行@2x.png"; sourceTree = "<group>"; };
+		F84C794F1ED9643D00C28045 /* 民生银行@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "民生银行@2x.png"; sourceTree = "<group>"; };
+		F84C79501ED9643D00C28045 /* 邮政储蓄银行@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "邮政储蓄银行@2x.png"; sourceTree = "<group>"; };
+		F84C79511ED9643D00C28045 /* 中国银行@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "中国银行@2x.png"; sourceTree = "<group>"; };
+		F84C79521ED9643D00C28045 /* 交通银行@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "交通银行@2x.png"; sourceTree = "<group>"; };
+		F84C79531ED9643D00C28045 /* 光大银行@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "光大银行@2x.png"; sourceTree = "<group>"; };
+		F84C79541ED9643D00C28045 /* 兴业银行@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "兴业银行@2x.png"; sourceTree = "<group>"; };
+		F84C79551ED9643D00C28045 /* 其他银行@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "其他银行@2x.png"; sourceTree = "<group>"; };
+		F84C79561ED9643D00C28045 /* 勾选@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "勾选@2x.png"; sourceTree = "<group>"; };
+		F84C79571ED9643D00C28045 /* 北京银行@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "北京银行@2x.png"; sourceTree = "<group>"; };
+		F84C79581ED9643D00C28045 /* 华夏银行@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "华夏银行@2x.png"; sourceTree = "<group>"; };
+		F84C79591ED9643D00C28045 /* 南京银行@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "南京银行@2x.png"; sourceTree = "<group>"; };
+		F84C795A1ED9643D00C28045 /* 宁波银行@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "宁波银行@2x.png"; sourceTree = "<group>"; };
+		F84C795B1ED9643D00C28045 /* 平安银行@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "平安银行@2x.png"; sourceTree = "<group>"; };
+		F84C795C1ED9643D00C28045 /* 广东省农村信用社@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "广东省农村信用社@2x.png"; sourceTree = "<group>"; };
+		F84C795D1ED9643D00C28045 /* 广发银行@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "广发银行@2x.png"; sourceTree = "<group>"; };
+		F84C795E1ED9643D00C28045 /* 广州银行@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "广州银行@2x.png"; sourceTree = "<group>"; };
+		F84C795F1ED9643D00C28045 /* 成都银行@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "成都银行@2x.png"; sourceTree = "<group>"; };
+		F84C79601ED9643D00C28045 /* 招商银行@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "招商银行@2x.png"; sourceTree = "<group>"; };
+		F84C79611ED9643D00C28045 /* 普中市商业银行@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "普中市商业银行@2x.png"; sourceTree = "<group>"; };
+		F84C79621ED9643D00C28045 /* 汉口银行@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "汉口银行@2x.png"; sourceTree = "<group>"; };
+		F84C79631ED9643D00C28045 /* 江苏银行@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "江苏银行@2x.png"; sourceTree = "<group>"; };
+		F84C79641ED9643D00C28045 /* 浦发银行@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "浦发银行@2x.png"; sourceTree = "<group>"; };
+		F84C79651ED9643D00C28045 /* 添加.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "添加.png"; sourceTree = "<group>"; };
+		F84C79661ED9643D00C28045 /* 渤海银行@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "渤海银行@2x.png"; sourceTree = "<group>"; };
+		F84C79671ED9643D00C28045 /* 温州银行@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "温州银行@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -328,6 +390,7 @@
 		75B88FCD1ED1681600690623 /* 银行卡名称 */ = {
 			isa = PBXGroup;
 			children = (
+				F84C79481ED9643D00C28045 /* BankImages */,
 				75B88FD51ED16D9100690623 /* bank.plist */,
 				75B88FD01ED1685200690623 /* CardNameController.h */,
 				75B88FD11ED1685200690623 /* CardNameController.m */,
@@ -577,6 +640,44 @@
 			path = "过山车动画";
 			sourceTree = "<group>";
 		};
+		F84C79481ED9643D00C28045 /* BankImages */ = {
+			isa = PBXGroup;
+			children = (
+				F84C79491ED9643D00C28045 /* 上海农商银行@2x.png */,
+				F84C794A1ED9643D00C28045 /* 东亚银行@2x.png */,
+				F84C794B1ED9643D00C28045 /* 中信银行@2x.png */,
+				F84C794C1ED9643D00C28045 /* 农业银行@2x.png */,
+				F84C794D1ED9643D00C28045 /* 工商银行@2x.png */,
+				F84C794E1ED9643D00C28045 /* 建设银行@2x.png */,
+				F84C794F1ED9643D00C28045 /* 民生银行@2x.png */,
+				F84C79501ED9643D00C28045 /* 邮政储蓄银行@2x.png */,
+				F84C79511ED9643D00C28045 /* 中国银行@2x.png */,
+				F84C79521ED9643D00C28045 /* 交通银行@2x.png */,
+				F84C79531ED9643D00C28045 /* 光大银行@2x.png */,
+				F84C79541ED9643D00C28045 /* 兴业银行@2x.png */,
+				F84C79551ED9643D00C28045 /* 其他银行@2x.png */,
+				F84C79561ED9643D00C28045 /* 勾选@2x.png */,
+				F84C79571ED9643D00C28045 /* 北京银行@2x.png */,
+				F84C79581ED9643D00C28045 /* 华夏银行@2x.png */,
+				F84C79591ED9643D00C28045 /* 南京银行@2x.png */,
+				F84C795A1ED9643D00C28045 /* 宁波银行@2x.png */,
+				F84C795B1ED9643D00C28045 /* 平安银行@2x.png */,
+				F84C795C1ED9643D00C28045 /* 广东省农村信用社@2x.png */,
+				F84C795D1ED9643D00C28045 /* 广发银行@2x.png */,
+				F84C795E1ED9643D00C28045 /* 广州银行@2x.png */,
+				F84C795F1ED9643D00C28045 /* 成都银行@2x.png */,
+				F84C79601ED9643D00C28045 /* 招商银行@2x.png */,
+				F84C79611ED9643D00C28045 /* 普中市商业银行@2x.png */,
+				F84C79621ED9643D00C28045 /* 汉口银行@2x.png */,
+				F84C79631ED9643D00C28045 /* 江苏银行@2x.png */,
+				F84C79641ED9643D00C28045 /* 浦发银行@2x.png */,
+				F84C79651ED9643D00C28045 /* 添加.png */,
+				F84C79661ED9643D00C28045 /* 渤海银行@2x.png */,
+				F84C79671ED9643D00C28045 /* 温州银行@2x.png */,
+			);
+			path = BankImages;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -689,20 +790,51 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F84C79741ED9643D00C28045 /* 其他银行@2x.png in Resources */,
+				F84C79751ED9643D00C28045 /* 勾选@2x.png in Resources */,
+				F84C797C1ED9643D00C28045 /* 广发银行@2x.png in Resources */,
+				F84C79711ED9643D00C28045 /* 交通银行@2x.png in Resources */,
+				F84C79771ED9643D00C28045 /* 华夏银行@2x.png in Resources */,
+				F84C79801ED9643D00C28045 /* 普中市商业银行@2x.png in Resources */,
+				F84C79811ED9643D00C28045 /* 汉口银行@2x.png in Resources */,
+				F84C79691ED9643D00C28045 /* 东亚银行@2x.png in Resources */,
+				F84C79681ED9643D00C28045 /* 上海农商银行@2x.png in Resources */,
+				F84C79851ED9643D00C28045 /* 渤海银行@2x.png in Resources */,
+				F84C797E1ED9643D00C28045 /* 成都银行@2x.png in Resources */,
 				F82D00F91ED822B900724ADA /* SGQRCode.bundle in Resources */,
+				F84C796C1ED9643D00C28045 /* 工商银行@2x.png in Resources */,
 				F82954BA1ED41466004457C3 /* StringRegexController.xib in Resources */,
 				F82D010E1ED825E800724ADA /* ScanSuccessController.xib in Resources */,
+				F84C796D1ED9643D00C28045 /* 建设银行@2x.png in Resources */,
+				F84C797F1ED9643D00C28045 /* 招商银行@2x.png in Resources */,
+				F84C79781ED9643D00C28045 /* 南京银行@2x.png in Resources */,
+				F84C79731ED9643D00C28045 /* 兴业银行@2x.png in Resources */,
+				F84C79861ED9643D00C28045 /* 温州银行@2x.png in Resources */,
+				F84C79791ED9643D00C28045 /* 宁波银行@2x.png in Resources */,
+				F84C796F1ED9643D00C28045 /* 邮政储蓄银行@2x.png in Resources */,
 				F84175E71ED28CF700C65435 /* RSAController.xib in Resources */,
+				F84C79721ED9643D00C28045 /* 光大银行@2x.png in Resources */,
 				7519C2001ED162DC00A7E4B5 /* LaunchScreen.storyboard in Resources */,
+				F84C79761ED9643D00C28045 /* 北京银行@2x.png in Resources */,
+				F84C79841ED9643D00C28045 /* 添加.png in Resources */,
 				F82D01091ED8243E00724ADA /* ScanQrcodeController.xib in Resources */,
 				7519C1FD1ED162DC00A7E4B5 /* Assets.xcassets in Resources */,
 				7519C1FB1ED162DC00A7E4B5 /* Main.storyboard in Resources */,
+				F84C797B1ED9643D00C28045 /* 广东省农村信用社@2x.png in Resources */,
+				F84C796B1ED9643D00C28045 /* 农业银行@2x.png in Resources */,
 				F82D01041ED8242500724ADA /* GenerateQrcodeController.xib in Resources */,
+				F84C79701ED9643D00C28045 /* 中国银行@2x.png in Resources */,
+				F84C797A1ED9643D00C28045 /* 平安银行@2x.png in Resources */,
 				F84C79461ED90D9800C28045 /* RollerCoasterController.xib in Resources */,
+				F84C79821ED9643D00C28045 /* 江苏银行@2x.png in Resources */,
 				75B88FD41ED1685200690623 /* CardNameController.xib in Resources */,
 				75B88FD61ED16D9100690623 /* bank.plist in Resources */,
+				F84C796E1ED9643D00C28045 /* 民生银行@2x.png in Resources */,
 				F84175861ED27F9A00C65435 /* HttpRequestController.xib in Resources */,
+				F84C796A1ED9643D00C28045 /* 中信银行@2x.png in Resources */,
+				F84C79831ED9643D00C28045 /* 浦发银行@2x.png in Resources */,
 				F82D00FF1ED822DB00724ADA /* QRcodeController.xib in Resources */,
+				F84C797D1ED9643D00C28045 /* 广州银行@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

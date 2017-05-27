@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardNameController">
             <connections>
+                <outlet property="bankLogo" destination="GuO-w8-eNq" id="GkT-Tv-Ynz"/>
                 <outlet property="cardName" destination="a35-EH-Fjh" id="3Ti-3h-XqV"/>
                 <outlet property="cardNum" destination="exJ-wE-i0P" id="nM9-lv-emH"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -57,14 +58,23 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GuO-w8-eNq">
+                    <rect key="frame" x="162.5" y="380" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="jVi-Ez-ntA"/>
+                        <constraint firstAttribute="height" constant="50" id="soK-54-V3i"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="exJ-wE-i0P" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="2fC-lr-eBh"/>
                 <constraint firstItem="a35-EH-Fjh" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="HvJ-7y-liV"/>
                 <constraint firstItem="a35-EH-Fjh" firstAttribute="top" secondItem="TJW-pX-q9T" secondAttribute="bottom" constant="50" id="Ufl-Cn-ltK"/>
+                <constraint firstItem="GuO-w8-eNq" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="WsD-FX-0e2"/>
                 <constraint firstItem="TJW-pX-q9T" firstAttribute="top" secondItem="exJ-wE-i0P" secondAttribute="bottom" constant="40" id="e4u-WK-g6h"/>
                 <constraint firstItem="exJ-wE-i0P" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="e9G-IN-1db"/>
+                <constraint firstItem="GuO-w8-eNq" firstAttribute="top" secondItem="a35-EH-Fjh" secondAttribute="bottom" constant="40" id="jaP-n6-R9y"/>
                 <constraint firstItem="TJW-pX-q9T" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="jhs-61-ejN"/>
             </constraints>
         </view>

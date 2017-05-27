@@ -11,6 +11,7 @@
 @interface CardNameController ()
 @property (strong, nonatomic) IBOutlet UITextField *cardNum;
 @property (strong, nonatomic) IBOutlet UILabel *cardName;
+@property (weak, nonatomic) IBOutlet UIImageView *bankLogo;
 
 @end
 
@@ -19,10 +20,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
 }
 
 - (IBAction)confirmBtn:(id)sender {
     _cardName.text = [self returnBankName:_cardNum.text];
+    NSArray *arr = [_cardName.text componentsSeparatedByString:@"·"];
+    
+    //图片不全 啦啦啦
+    if (arr) {
+        _bankLogo.image = [UIImage imageNamed:arr[0]];
+    }
 }
 
 - (NSString *)returnBankName:(NSString*) idCard{
@@ -45,6 +53,7 @@
     //8位Bin号
     NSString* cardbin_8 = [idCard substringWithRange:NSMakeRange(0, 8)];
     
+    
     if ([bankBin containsObject:cardbin_6]) {
         return [resultDic objectForKey:cardbin_6];
     }else if ([bankBin containsObject:cardbin_8]){
@@ -53,6 +62,7 @@
         return @"文件中不存在请自行添加对应卡种";
     }
     return @"";
+    
     
 }
 

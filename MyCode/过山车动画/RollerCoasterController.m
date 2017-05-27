@@ -102,8 +102,8 @@
     [leftSnowbergBodyPath addLineToPoint:firstPathPoint];
     [leftSnowbergBodyPath addLineToPoint:CGPointMake(60, firstPathPoint.y)];
     [leftSnowbergBodyPath addLineToPoint:CGPointMake(100, firstPathPoint.y + 30)];
-    [leftSnowbergBodyPath addLineToPoint:CGPointMake(140, firstPathPoint.y)];
-    [leftSnowbergBodyPath addLineToPoint:CGPointMake(180, firstPathPoint.y - 20)];
+    [leftSnowbergBodyPath addLineToPoint:CGPointMake(120, firstPathPoint.y)];
+    [leftSnowbergBodyPath addLineToPoint:CGPointMake(k_SIZE.width / 2, firstPathPoint.y - 20)];
     
     CGPoint secondPathPoint = [self calculateWithXValue:(k_SIZE.width / 2 - 125) startPoint:endPoint endpoint:CGPointMake(k_SIZE.width / 2, k_LAND_BEGIN_HEIGHT)];
     [leftSnowbergBodyPath addLineToPoint:CGPointMake(secondPathPoint.x - 30, firstPathPoint.y)];
@@ -115,11 +115,11 @@
     [leftSnowbergBodyPath closePath];
     
     leftSnowbergBody.path = leftSnowbergBodyPath.CGPath;
-    UIColor *snowColor = [UIColor whiteColor];
+    UIColor *snowColor = [UIColor colorWithRed:125.0 /255.0 green:87.0 /255.0 blue:7.0 /255.0 alpha:1.0];
     leftSnowbergBody.fillColor = snowColor.CGColor;
     [self.view.layer addSublayer:leftSnowbergBody];
     
-    
+
     //   中间的山
     CAShapeLayer *middleSnowberg = [[CAShapeLayer alloc] init];
     UIBezierPath *middleSnowbergPath = [[UIBezierPath alloc] init];
@@ -227,6 +227,7 @@
     [trackPath addLineToPoint:CGPointMake(k_SIZE.width + 10, k_SIZE.height + 10)];
     [trackPath addLineToPoint:CGPointMake(0, k_SIZE.height + 10)];
     
+    
     _yellowTrack.fillColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"yellow"]].CGColor;
     _yellowTrack.path = trackPath.CGPath;
     [self.view.layer insertSublayer:_yellowTrack below:_landLayer];
@@ -279,7 +280,6 @@
 
 //添加点缀的小树
 - (void)initTree{
-    
     [self addTreesWithNumber:7 treeFrame:CGRectMake(0, k_LAND_BEGIN_HEIGHT - 20, 13, 23)];
     [self addTreesWithNumber:7 treeFrame:CGRectMake(0, k_LAND_BEGIN_HEIGHT - 64, 18, 32)];
     [self addTreesWithNumber:5 treeFrame:CGRectMake(0, k_LAND_BEGIN_HEIGHT - 90, 13, 23)];
@@ -291,7 +291,7 @@
     for (NSInteger i = 0; i < treesNumber + 1; i++) {
         CALayer *treeLayer = [[CALayer alloc] init];
         treeLayer.contents = (__bridge id _Nullable)(tree.CGImage);
-        treeLayer.frame = CGRectMake(k_SIZE.width - 50 * i * (arc4random_uniform(4) + 1), frame.origin.y, frame.size.width, frame.size.height);
+        treeLayer.frame = CGRectMake(arc4random()%350, frame.origin.y, frame.size.width, frame.size.height);
         [self.view.layer insertSublayer:treeLayer above:_greenTrack];
     }
 }
@@ -315,8 +315,6 @@
     
     [cloud addAnimation:ani forKey:@"position"];
 }
-
-
 
 //抽取过山车的动画
 - (CAKeyframeAnimation *)carAnimationWith:(NSString *)carImageName TrackLayer:(CAShapeLayer *)track AnimationDuration:(CFTimeInterval)duration BeginTime:(CFTimeInterval)beginTime{
