@@ -25,6 +25,8 @@
 
 - (IBAction)confirmBtn:(id)sender {
     _cardName.text = [self returnBankName:_cardNum.text];
+    
+    //此 · 是中文状态下～键 不要按shift   ················
     NSArray *arr = [_cardName.text componentsSeparatedByString:@"·"];
     
     //图片不全 啦啦啦
