@@ -33,6 +33,7 @@
     [super viewDidLoad];
     
     self.title = @"封装";
+    
     self.navigationController.navigationBar.translucent = YES;
     
     _nameArray = [[NSMutableArray alloc] initWithObjects:@"网络请求", @"二维码", @"rsa签名加密解密", @"银行卡名称", @"字符串正则判断", @"过山车动画", nil];
