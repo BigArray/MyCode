@@ -47,6 +47,8 @@
 		F84175E21ED28AFB00C65435 /* RSAHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = F84175E11ED28AFB00C65435 /* RSAHandler.m */; };
 		F84175E61ED28CF700C65435 /* RSAController.m in Sources */ = {isa = PBXBuildFile; fileRef = F84175E41ED28CF700C65435 /* RSAController.m */; };
 		F84175E71ED28CF700C65435 /* RSAController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F84175E51ED28CF700C65435 /* RSAController.xib */; };
+		F84C79451ED90D9800C28045 /* RollerCoasterController.m in Sources */ = {isa = PBXBuildFile; fileRef = F84C79431ED90D9800C28045 /* RollerCoasterController.m */; };
+		F84C79461ED90D9800C28045 /* RollerCoasterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F84C79441ED90D9800C28045 /* RollerCoasterController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -212,6 +214,9 @@
 		F84175E31ED28CF700C65435 /* RSAController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSAController.h; sourceTree = "<group>"; };
 		F84175E41ED28CF700C65435 /* RSAController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSAController.m; sourceTree = "<group>"; };
 		F84175E51ED28CF700C65435 /* RSAController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RSAController.xib; sourceTree = "<group>"; };
+		F84C79421ED90D9800C28045 /* RollerCoasterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RollerCoasterController.h; sourceTree = "<group>"; };
+		F84C79431ED90D9800C28045 /* RollerCoasterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RollerCoasterController.m; sourceTree = "<group>"; };
+		F84C79441ED90D9800C28045 /* RollerCoasterController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RollerCoasterController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -275,6 +280,7 @@
 		7519C1EF1ED162DC00A7E4B5 /* MyCode */ = {
 			isa = PBXGroup;
 			children = (
+				F84C79411ED90D6800C28045 /* 过山车动画 */,
 				F82D00DF1ED822B900724ADA /* 二维码 */,
 				F82954B21ED410D0004457C3 /* 字符串正则判断 */,
 				F84175871ED28AC500C65435 /* RSA签名加密解密 */,
@@ -561,6 +567,16 @@
 			path = openssl;
 			sourceTree = "<group>";
 		};
+		F84C79411ED90D6800C28045 /* 过山车动画 */ = {
+			isa = PBXGroup;
+			children = (
+				F84C79421ED90D9800C28045 /* RollerCoasterController.h */,
+				F84C79431ED90D9800C28045 /* RollerCoasterController.m */,
+				F84C79441ED90D9800C28045 /* RollerCoasterController.xib */,
+			);
+			path = "过山车动画";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -682,6 +698,7 @@
 				7519C1FD1ED162DC00A7E4B5 /* Assets.xcassets in Resources */,
 				7519C1FB1ED162DC00A7E4B5 /* Main.storyboard in Resources */,
 				F82D01041ED8242500724ADA /* GenerateQrcodeController.xib in Resources */,
+				F84C79461ED90D9800C28045 /* RollerCoasterController.xib in Resources */,
 				75B88FD41ED1685200690623 /* CardNameController.xib in Resources */,
 				75B88FD61ED16D9100690623 /* bank.plist in Resources */,
 				F84175861ED27F9A00C65435 /* HttpRequestController.xib in Resources */,
@@ -762,6 +779,7 @@
 				F84175E21ED28AFB00C65435 /* RSAHandler.m in Sources */,
 				F82954B51ED41115004457C3 /* NSString+RegexJudge.m in Sources */,
 				F84175851ED27F9A00C65435 /* HttpRequestController.m in Sources */,
+				F84C79451ED90D9800C28045 /* RollerCoasterController.m in Sources */,
 				F82D00FE1ED822DB00724ADA /* QRcodeController.m in Sources */,
 				F82954B91ED41466004457C3 /* StringRegexController.m in Sources */,
 				7519C1F51ED162DC00A7E4B5 /* AppDelegate.m in Sources */,

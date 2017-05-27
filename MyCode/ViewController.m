@@ -15,6 +15,7 @@
 #import "RSAController.h"
 #import "CardNameController.h"
 #import "StringRegexController.h"
+#import "RollerCoasterController.h"
 
 
 
@@ -34,7 +35,7 @@
     self.title = @"封装";
     self.navigationController.navigationBar.translucent = YES;
     
-    _nameArray = [[NSMutableArray alloc] initWithObjects:@"网络请求", @"二维码", @"rsa签名加密解密", @"银行卡名称", @"字符串正则判断", nil];
+    _nameArray = [[NSMutableArray alloc] initWithObjects:@"网络请求", @"二维码", @"rsa签名加密解密", @"银行卡名称", @"字符串正则判断", @"过山车动画", nil];
     
     [self createView];
 }
@@ -100,6 +101,12 @@
         {
             StringRegexController *srVC = [[StringRegexController alloc] init];
             [self.navigationController pushViewController:srVC animated:YES];
+        }
+            break;
+        case 5://过山车动画
+        {
+            RollerCoasterController *rcVC = [[RollerCoasterController alloc] init];
+            [self.navigationController pushViewController:rcVC animated:YES];
         }
             
         default:
