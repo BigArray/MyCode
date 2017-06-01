@@ -28,7 +28,7 @@
     
     //创建网页内容对象
     UIImage *image = [UIImage imageNamed:@"sharetest"];
-    UMShareWebpageObject *shareObject = [UMShareWebpageObject shareObjectWithTitle:@"分享测试" descr:@"this is a test" thumImage:image];
+    UMShareWebpageObject *shareObject = [UMShareWebpageObject shareObjectWithTitle:@"为了世界和平" descr:@"this is a test" thumImage:image];
     //设置网页地址
     shareObject.webpageUrl = @"https://github.com/BigArray/MyCode.git";
     
