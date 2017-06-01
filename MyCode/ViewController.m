@@ -17,6 +17,7 @@
 #import "StringRegexController.h"
 #import "RollerCoasterController.h"
 #import "SqliteController.h"
+#import "ShareController.h"
 
 
 
@@ -37,7 +38,7 @@
     
     self.navigationController.navigationBar.translucent = YES;
     
-    _nameArray = [[NSMutableArray alloc] initWithObjects:@"网络请求", @"二维码", @"rsa签名加密解密", @"银行卡名称", @"字符串正则判断", @"过山车动画", @"数据增删改查", nil];
+    _nameArray = [[NSMutableArray alloc] initWithObjects:@"网络请求", @"二维码", @"rsa签名加密解密", @"银行卡名称", @"字符串正则判断", @"过山车动画", @"数据增删改查", @"友盟分享", nil];
     
     [self createView];
 }
@@ -110,11 +111,19 @@
             RollerCoasterController *rcVC = [[RollerCoasterController alloc] init];
             [self.navigationController pushViewController:rcVC animated:YES];
         }
+            break;
         case 6://数据增删改查
         {
             SqliteController *sqlVC = [[SqliteController alloc] init];
             [self.navigationController pushViewController:sqlVC animated:YES];
         }
+            break;
+        case 7://友盟分享
+        {
+            ShareController *shareVC = [[ShareController alloc] init];
+            [self.navigationController pushViewController:shareVC animated:YES];
+        }
+            break;
             
         default:
             break;

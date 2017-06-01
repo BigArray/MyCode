@@ -80,6 +80,19 @@
 		F84C79841ED9643D00C28045 /* 添加.png in Resources */ = {isa = PBXBuildFile; fileRef = F84C79651ED9643D00C28045 /* 添加.png */; };
 		F84C79851ED9643D00C28045 /* 渤海银行@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F84C79661ED9643D00C28045 /* 渤海银行@2x.png */; };
 		F84C79861ED9643D00C28045 /* 温州银行@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F84C79671ED9643D00C28045 /* 温州银行@2x.png */; };
+		F88160891EDFABAB00394D31 /* sharetest.png in Resources */ = {isa = PBXBuildFile; fileRef = F88160751EDFABAB00394D31 /* sharetest.png */; };
+		F881608A1EDFABAB00394D31 /* libSocialQQ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F88160781EDFABAB00394D31 /* libSocialQQ.a */; };
+		F881608B1EDFABAB00394D31 /* libSocialUniqueId.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F881607B1EDFABAB00394D31 /* libSocialUniqueId.a */; };
+		F881608C1EDFABAB00394D31 /* libSocialWeChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F881607E1EDFABAB00394D31 /* libSocialWeChat.a */; };
+		F881608D1EDFABAB00394D31 /* UMSocialCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88160811EDFABAB00394D31 /* UMSocialCore.framework */; };
+		F881608E1EDFABAB00394D31 /* UMSocialNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88160821EDFABAB00394D31 /* UMSocialNetwork.framework */; };
+		F881608F1EDFABAB00394D31 /* UMSocialSDKPromptResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F88160831EDFABAB00394D31 /* UMSocialSDKPromptResources.bundle */; };
+		F88160901EDFABAB00394D31 /* libUMSocialLog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F88160851EDFABAB00394D31 /* libUMSocialLog.a */; };
+		F88160911EDFABAB00394D31 /* UMSocialSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F88160871EDFABAB00394D31 /* UMSocialSDKResources.bundle */; };
+		F88160921EDFABAB00394D31 /* UShareUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88160881EDFABAB00394D31 /* UShareUI.framework */; };
+		F88160941EDFAD4600394D31 /* shareAttention.txt in Resources */ = {isa = PBXBuildFile; fileRef = F88160931EDFAD4600394D31 /* shareAttention.txt */; };
+		F88160981EDFAE5600394D31 /* ShareController.m in Sources */ = {isa = PBXBuildFile; fileRef = F88160961EDFAE5600394D31 /* ShareController.m */; };
+		F88160991EDFAE5600394D31 /* ShareController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F88160971EDFAE5600394D31 /* ShareController.xib */; };
 		F8A4AC5B1EDE590400177CD3 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A4AC5A1EDE590400177CD3 /* libsqlite3.0.tbd */; };
 		F8A4AC7F1EDEA61F00177CD3 /* NSObject+Z_Model.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A4AC771EDEA61F00177CD3 /* NSObject+Z_Model.m */; };
 		F8A4AC801EDEA61F00177CD3 /* Z_ModelSqliteKit.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A4AC791EDEA61F00177CD3 /* Z_ModelSqliteKit.m */; };
@@ -285,6 +298,23 @@
 		F84C79651ED9643D00C28045 /* 添加.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "添加.png"; sourceTree = "<group>"; };
 		F84C79661ED9643D00C28045 /* 渤海银行@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "渤海银行@2x.png"; sourceTree = "<group>"; };
 		F84C79671ED9643D00C28045 /* 温州银行@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "温州银行@2x.png"; sourceTree = "<group>"; };
+		F88160751EDFABAB00394D31 /* sharetest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sharetest.png; sourceTree = "<group>"; };
+		F88160781EDFABAB00394D31 /* libSocialQQ.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialQQ.a; sourceTree = "<group>"; };
+		F88160791EDFABAB00394D31 /* UMSocialQQHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialQQHandler.h; sourceTree = "<group>"; };
+		F881607B1EDFABAB00394D31 /* libSocialUniqueId.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialUniqueId.a; sourceTree = "<group>"; };
+		F881607C1EDFABAB00394D31 /* UMSocialUniqueIdHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialUniqueIdHandler.h; sourceTree = "<group>"; };
+		F881607E1EDFABAB00394D31 /* libSocialWeChat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialWeChat.a; sourceTree = "<group>"; };
+		F881607F1EDFABAB00394D31 /* UMSocialWechatHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialWechatHandler.h; sourceTree = "<group>"; };
+		F88160811EDFABAB00394D31 /* UMSocialCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMSocialCore.framework; sourceTree = "<group>"; };
+		F88160821EDFABAB00394D31 /* UMSocialNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMSocialNetwork.framework; sourceTree = "<group>"; };
+		F88160831EDFABAB00394D31 /* UMSocialSDKPromptResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UMSocialSDKPromptResources.bundle; sourceTree = "<group>"; };
+		F88160851EDFABAB00394D31 /* libUMSocialLog.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libUMSocialLog.a; sourceTree = "<group>"; };
+		F88160871EDFABAB00394D31 /* UMSocialSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UMSocialSDKResources.bundle; sourceTree = "<group>"; };
+		F88160881EDFABAB00394D31 /* UShareUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UShareUI.framework; sourceTree = "<group>"; };
+		F88160931EDFAD4600394D31 /* shareAttention.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shareAttention.txt; sourceTree = "<group>"; };
+		F88160951EDFAE5600394D31 /* ShareController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareController.h; sourceTree = "<group>"; };
+		F88160961EDFAE5600394D31 /* ShareController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareController.m; sourceTree = "<group>"; };
+		F88160971EDFAE5600394D31 /* ShareController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShareController.xib; sourceTree = "<group>"; };
 		F8A4AC5A1EDE590400177CD3 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		F8A4AC761EDEA61F00177CD3 /* NSObject+Z_Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Z_Model.h"; sourceTree = "<group>"; };
 		F8A4AC771EDEA61F00177CD3 /* NSObject+Z_Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Z_Model.m"; sourceTree = "<group>"; };
@@ -302,10 +332,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F881608D1EDFABAB00394D31 /* UMSocialCore.framework in Frameworks */,
+				F881608A1EDFABAB00394D31 /* libSocialQQ.a in Frameworks */,
 				F8A4AC5B1EDE590400177CD3 /* libsqlite3.0.tbd in Frameworks */,
+				F88160921EDFABAB00394D31 /* UShareUI.framework in Frameworks */,
 				F84175DC1ED28AC500C65435 /* libcrypto.a in Frameworks */,
+				F881608C1EDFABAB00394D31 /* libSocialWeChat.a in Frameworks */,
+				F881608E1EDFABAB00394D31 /* UMSocialNetwork.framework in Frameworks */,
 				37F6E0BA69D79BE77CA3197C /* libPods-MyCode.a in Frameworks */,
+				F881608B1EDFABAB00394D31 /* libSocialUniqueId.a in Frameworks */,
 				F84175DD1ED28AC500C65435 /* libssl.a in Frameworks */,
+				F88160901EDFABAB00394D31 /* libUMSocialLog.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +397,7 @@
 		7519C1EF1ED162DC00A7E4B5 /* MyCode */ = {
 			isa = PBXGroup;
 			children = (
+				F88160731EDFABAB00394D31 /* 友盟分享 */,
 				F8A4AC741EDEA61F00177CD3 /* 数据存储 */,
 				F84C79411ED90D6800C28045 /* 过山车动画 */,
 				F82D00DF1ED822B900724ADA /* 二维码 */,
@@ -697,6 +735,94 @@
 			path = BankImages;
 			sourceTree = "<group>";
 		};
+		F88160731EDFABAB00394D31 /* 友盟分享 */ = {
+			isa = PBXGroup;
+			children = (
+				F88160741EDFABAB00394D31 /* UMSocial */,
+				F88160931EDFAD4600394D31 /* shareAttention.txt */,
+				F88160951EDFAE5600394D31 /* ShareController.h */,
+				F88160961EDFAE5600394D31 /* ShareController.m */,
+				F88160971EDFAE5600394D31 /* ShareController.xib */,
+			);
+			path = "友盟分享";
+			sourceTree = "<group>";
+		};
+		F88160741EDFABAB00394D31 /* UMSocial */ = {
+			isa = PBXGroup;
+			children = (
+				F88160751EDFABAB00394D31 /* sharetest.png */,
+				F88160761EDFABAB00394D31 /* SocialLibraries */,
+				F88160801EDFABAB00394D31 /* UMSocialSDK */,
+				F88160841EDFABAB00394D31 /* UMSocialSDKPlugin */,
+				F88160861EDFABAB00394D31 /* UMSocialUI */,
+			);
+			path = UMSocial;
+			sourceTree = "<group>";
+		};
+		F88160761EDFABAB00394D31 /* SocialLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				F88160771EDFABAB00394D31 /* QQ */,
+				F881607A1EDFABAB00394D31 /* UniqueId */,
+				F881607D1EDFABAB00394D31 /* WeChat */,
+			);
+			path = SocialLibraries;
+			sourceTree = "<group>";
+		};
+		F88160771EDFABAB00394D31 /* QQ */ = {
+			isa = PBXGroup;
+			children = (
+				F88160781EDFABAB00394D31 /* libSocialQQ.a */,
+				F88160791EDFABAB00394D31 /* UMSocialQQHandler.h */,
+			);
+			path = QQ;
+			sourceTree = "<group>";
+		};
+		F881607A1EDFABAB00394D31 /* UniqueId */ = {
+			isa = PBXGroup;
+			children = (
+				F881607B1EDFABAB00394D31 /* libSocialUniqueId.a */,
+				F881607C1EDFABAB00394D31 /* UMSocialUniqueIdHandler.h */,
+			);
+			path = UniqueId;
+			sourceTree = "<group>";
+		};
+		F881607D1EDFABAB00394D31 /* WeChat */ = {
+			isa = PBXGroup;
+			children = (
+				F881607E1EDFABAB00394D31 /* libSocialWeChat.a */,
+				F881607F1EDFABAB00394D31 /* UMSocialWechatHandler.h */,
+			);
+			path = WeChat;
+			sourceTree = "<group>";
+		};
+		F88160801EDFABAB00394D31 /* UMSocialSDK */ = {
+			isa = PBXGroup;
+			children = (
+				F88160811EDFABAB00394D31 /* UMSocialCore.framework */,
+				F88160821EDFABAB00394D31 /* UMSocialNetwork.framework */,
+				F88160831EDFABAB00394D31 /* UMSocialSDKPromptResources.bundle */,
+			);
+			path = UMSocialSDK;
+			sourceTree = "<group>";
+		};
+		F88160841EDFABAB00394D31 /* UMSocialSDKPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				F88160851EDFABAB00394D31 /* libUMSocialLog.a */,
+			);
+			path = UMSocialSDKPlugin;
+			sourceTree = "<group>";
+		};
+		F88160861EDFABAB00394D31 /* UMSocialUI */ = {
+			isa = PBXGroup;
+			children = (
+				F88160871EDFABAB00394D31 /* UMSocialSDKResources.bundle */,
+				F88160881EDFABAB00394D31 /* UShareUI.framework */,
+			);
+			path = UMSocialUI;
+			sourceTree = "<group>";
+		};
 		F8A4AC741EDEA61F00177CD3 /* 数据存储 */ = {
 			isa = PBXGroup;
 			children = (
@@ -840,12 +966,16 @@
 				F84C79771ED9643D00C28045 /* 华夏银行@2x.png in Resources */,
 				F8A4AC831EDEA61F00177CD3 /* SqliteController.xib in Resources */,
 				F84C79801ED9643D00C28045 /* 普中市商业银行@2x.png in Resources */,
+				F88160941EDFAD4600394D31 /* shareAttention.txt in Resources */,
 				F84C79811ED9643D00C28045 /* 汉口银行@2x.png in Resources */,
 				F84C79691ED9643D00C28045 /* 东亚银行@2x.png in Resources */,
 				F84C79681ED9643D00C28045 /* 上海农商银行@2x.png in Resources */,
 				F84C79851ED9643D00C28045 /* 渤海银行@2x.png in Resources */,
 				F84C797E1ED9643D00C28045 /* 成都银行@2x.png in Resources */,
+				F88160911EDFABAB00394D31 /* UMSocialSDKResources.bundle in Resources */,
+				F88160991EDFAE5600394D31 /* ShareController.xib in Resources */,
 				F82D00F91ED822B900724ADA /* SGQRCode.bundle in Resources */,
+				F88160891EDFABAB00394D31 /* sharetest.png in Resources */,
 				F84C796C1ED9643D00C28045 /* 工商银行@2x.png in Resources */,
 				F82954BA1ED41466004457C3 /* StringRegexController.xib in Resources */,
 				F82D010E1ED825E800724ADA /* ScanSuccessController.xib in Resources */,
@@ -863,6 +993,7 @@
 				F84C79841ED9643D00C28045 /* 添加.png in Resources */,
 				F82D01091ED8243E00724ADA /* ScanQrcodeController.xib in Resources */,
 				7519C1FD1ED162DC00A7E4B5 /* Assets.xcassets in Resources */,
+				F881608F1EDFABAB00394D31 /* UMSocialSDKPromptResources.bundle in Resources */,
 				7519C1FB1ED162DC00A7E4B5 /* Main.storyboard in Resources */,
 				F84C797B1ED9643D00C28045 /* 广东省农村信用社@2x.png in Resources */,
 				F84C796B1ED9643D00C28045 /* 农业银行@2x.png in Resources */,
@@ -970,6 +1101,7 @@
 				F82D010D1ED825E800724ADA /* ScanSuccessController.m in Sources */,
 				F8A4AC801EDEA61F00177CD3 /* Z_ModelSqliteKit.m in Sources */,
 				75B88FD31ED1685200690623 /* CardNameController.m in Sources */,
+				F88160981EDFAE5600394D31 /* ShareController.m in Sources */,
 				F82D00F61ED822B900724ADA /* SGQRCodeScanningView.m in Sources */,
 				F82D01031ED8242500724ADA /* GenerateQrcodeController.m in Sources */,
 				7519C1F21ED162DC00A7E4B5 /* main.m in Sources */,
@@ -1129,6 +1261,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VHRLMCFE5Z;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MyCode/友盟分享/UMSocial/UMSocialSDK",
+					"$(PROJECT_DIR)/MyCode/友盟分享/UMSocial/UMSocialUI",
+				);
 				GCC_INPUT_FILETYPE = automatic;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1144,6 +1281,10 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MyCode/RSA签名加密解密/openssl/include",
+					"$(PROJECT_DIR)/MyCode/友盟分享/UMSocial/SocialLibraries/QQ",
+					"$(PROJECT_DIR)/MyCode/友盟分享/UMSocial/SocialLibraries/UniqueId",
+					"$(PROJECT_DIR)/MyCode/友盟分享/UMSocial/SocialLibraries/WeChat",
+					"$(PROJECT_DIR)/MyCode/友盟分享/UMSocial/UMSocialSDKPlugin",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zzf.MyCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1158,6 +1299,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VHRLMCFE5Z;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MyCode/友盟分享/UMSocial/UMSocialSDK",
+					"$(PROJECT_DIR)/MyCode/友盟分享/UMSocial/UMSocialUI",
+				);
 				GCC_INPUT_FILETYPE = automatic;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1173,6 +1319,10 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MyCode/RSA签名加密解密/openssl/include",
+					"$(PROJECT_DIR)/MyCode/友盟分享/UMSocial/SocialLibraries/QQ",
+					"$(PROJECT_DIR)/MyCode/友盟分享/UMSocial/SocialLibraries/UniqueId",
+					"$(PROJECT_DIR)/MyCode/友盟分享/UMSocial/SocialLibraries/WeChat",
+					"$(PROJECT_DIR)/MyCode/友盟分享/UMSocial/UMSocialSDKPlugin",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zzf.MyCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
