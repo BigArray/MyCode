@@ -18,6 +18,7 @@
 #import "RollerCoasterController.h"
 #import "SqliteController.h"
 #import "ShareController.h"
+#import "IQKeyboardManagerController.h"
 
 
 
@@ -38,7 +39,7 @@
     
     self.navigationController.navigationBar.translucent = YES;
     
-    _nameArray = [[NSMutableArray alloc] initWithObjects:@"网络请求", @"二维码", @"rsa签名加密解密", @"银行卡名称", @"字符串正则判断", @"过山车动画", @"数据增删改查", @"友盟分享", nil];
+    _nameArray = [[NSMutableArray alloc] initWithObjects:@"网络请求", @"二维码", @"rsa签名加密解密", @"银行卡名称", @"字符串正则判断", @"过山车动画", @"数据增删改查", @"友盟分享", @"IQKeyboardManager", nil];
     
     [self createView];
 }
@@ -122,6 +123,12 @@
         {
             ShareController *shareVC = [[ShareController alloc] init];
             [self.navigationController pushViewController:shareVC animated:YES];
+        }
+            break;
+        case 8:
+        {
+            IQKeyboardManagerController *iqVC = [[IQKeyboardManagerController alloc] init];
+            [self.navigationController pushViewController:iqVC animated:YES];
         }
             break;
             

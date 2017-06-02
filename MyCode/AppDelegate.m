@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import <UMSocialCore/UMSocialCore.h>
+#import <IQKeyboardManager/IQKeyboardManager.h>
 
 @interface AppDelegate ()
 
@@ -29,9 +30,14 @@
     //设置分享配置
     [self setShareConfig];
     
+    //设置iqmanager
+    [self setIQManagerConfig];
+    
+    
     return YES;
 }
 
+#pragma mark 设置分享配置
 - (void)setShareConfig{
     
     /* 打开调试日志 */
@@ -40,6 +46,15 @@
     [[UMSocialManager defaultManager] setUmSocialAppkey:@"592e85294544cb6534000256"];
     //设置微信appkey和appSecret
     [[UMSocialManager defaultManager] setPlaform:UMSocialPlatformType_WechatSession appKey:@"wx9de46746d4e98c4d" appSecret:@"1228345864461579c3b9fe9b226f62c3" redirectURL:@"http://mobile.umeng.com/social"];
+}
+
+#pragma mark 设置iqmanager
+- (void)setIQManagerConfig{
+    IQKeyboardManager *manager = [IQKeyboardManager sharedManager];
+    manager.enable = YES;
+    manager.shouldResignOnTouchOutside = YES;
+    manager.shouldToolbarUsesTextFieldTintColor = YES;
+    manager.enableAutoToolbar = YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

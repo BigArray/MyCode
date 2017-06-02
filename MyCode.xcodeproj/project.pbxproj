@@ -47,6 +47,10 @@
 		F84175E21ED28AFB00C65435 /* RSAHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = F84175E11ED28AFB00C65435 /* RSAHandler.m */; };
 		F84175E61ED28CF700C65435 /* RSAController.m in Sources */ = {isa = PBXBuildFile; fileRef = F84175E41ED28CF700C65435 /* RSAController.m */; };
 		F84175E71ED28CF700C65435 /* RSAController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F84175E51ED28CF700C65435 /* RSAController.xib */; };
+		F844DDEF1EE17C8400891BD8 /* IQKeyboardManagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = F844DDED1EE17C8400891BD8 /* IQKeyboardManagerController.m */; };
+		F844DDF01EE17C8400891BD8 /* IQKeyboardManagerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F844DDEE1EE17C8400891BD8 /* IQKeyboardManagerController.xib */; };
+		F844DDF51EE17F1C00891BD8 /* ScrollImagesController.m in Sources */ = {isa = PBXBuildFile; fileRef = F844DDF31EE17F1C00891BD8 /* ScrollImagesController.m */; };
+		F844DDF61EE17F1C00891BD8 /* ScrollImagesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F844DDF41EE17F1C00891BD8 /* ScrollImagesController.xib */; };
 		F84C79451ED90D9800C28045 /* RollerCoasterController.m in Sources */ = {isa = PBXBuildFile; fileRef = F84C79431ED90D9800C28045 /* RollerCoasterController.m */; };
 		F84C79461ED90D9800C28045 /* RollerCoasterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F84C79441ED90D9800C28045 /* RollerCoasterController.xib */; };
 		F84C79681ED9643D00C28045 /* 上海农商银行@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F84C79491ED9643D00C28045 /* 上海农商银行@2x.png */; };
@@ -264,6 +268,12 @@
 		F84175E31ED28CF700C65435 /* RSAController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSAController.h; sourceTree = "<group>"; };
 		F84175E41ED28CF700C65435 /* RSAController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSAController.m; sourceTree = "<group>"; };
 		F84175E51ED28CF700C65435 /* RSAController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RSAController.xib; sourceTree = "<group>"; };
+		F844DDEC1EE17C8400891BD8 /* IQKeyboardManagerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardManagerController.h; sourceTree = "<group>"; };
+		F844DDED1EE17C8400891BD8 /* IQKeyboardManagerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQKeyboardManagerController.m; sourceTree = "<group>"; };
+		F844DDEE1EE17C8400891BD8 /* IQKeyboardManagerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IQKeyboardManagerController.xib; sourceTree = "<group>"; };
+		F844DDF21EE17F1C00891BD8 /* ScrollImagesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollImagesController.h; sourceTree = "<group>"; };
+		F844DDF31EE17F1C00891BD8 /* ScrollImagesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollImagesController.m; sourceTree = "<group>"; };
+		F844DDF41EE17F1C00891BD8 /* ScrollImagesController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScrollImagesController.xib; sourceTree = "<group>"; };
 		F84C79421ED90D9800C28045 /* RollerCoasterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RollerCoasterController.h; sourceTree = "<group>"; };
 		F84C79431ED90D9800C28045 /* RollerCoasterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RollerCoasterController.m; sourceTree = "<group>"; };
 		F84C79441ED90D9800C28045 /* RollerCoasterController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RollerCoasterController.xib; sourceTree = "<group>"; };
@@ -397,6 +407,8 @@
 		7519C1EF1ED162DC00A7E4B5 /* MyCode */ = {
 			isa = PBXGroup;
 			children = (
+				F844DDF11EE17EC900891BD8 /* 轮播图 */,
+				F844DDEB1EE17C6600891BD8 /* IQKeyboardManager */,
 				F88160731EDFABAB00394D31 /* 友盟分享 */,
 				F8A4AC741EDEA61F00177CD3 /* 数据存储 */,
 				F84C79411ED90D6800C28045 /* 过山车动画 */,
@@ -687,6 +699,26 @@
 			path = openssl;
 			sourceTree = "<group>";
 		};
+		F844DDEB1EE17C6600891BD8 /* IQKeyboardManager */ = {
+			isa = PBXGroup;
+			children = (
+				F844DDEC1EE17C8400891BD8 /* IQKeyboardManagerController.h */,
+				F844DDED1EE17C8400891BD8 /* IQKeyboardManagerController.m */,
+				F844DDEE1EE17C8400891BD8 /* IQKeyboardManagerController.xib */,
+			);
+			path = IQKeyboardManager;
+			sourceTree = "<group>";
+		};
+		F844DDF11EE17EC900891BD8 /* 轮播图 */ = {
+			isa = PBXGroup;
+			children = (
+				F844DDF21EE17F1C00891BD8 /* ScrollImagesController.h */,
+				F844DDF31EE17F1C00891BD8 /* ScrollImagesController.m */,
+				F844DDF41EE17F1C00891BD8 /* ScrollImagesController.xib */,
+			);
+			path = "轮播图";
+			sourceTree = "<group>";
+		};
 		F84C79411ED90D6800C28045 /* 过山车动画 */ = {
 			isa = PBXGroup;
 			children = (
@@ -969,6 +1001,7 @@
 				F88160941EDFAD4600394D31 /* shareAttention.txt in Resources */,
 				F84C79811ED9643D00C28045 /* 汉口银行@2x.png in Resources */,
 				F84C79691ED9643D00C28045 /* 东亚银行@2x.png in Resources */,
+				F844DDF01EE17C8400891BD8 /* IQKeyboardManagerController.xib in Resources */,
 				F84C79681ED9643D00C28045 /* 上海农商银行@2x.png in Resources */,
 				F84C79851ED9643D00C28045 /* 渤海银行@2x.png in Resources */,
 				F84C797E1ED9643D00C28045 /* 成都银行@2x.png in Resources */,
@@ -993,6 +1026,7 @@
 				F84C79841ED9643D00C28045 /* 添加.png in Resources */,
 				F82D01091ED8243E00724ADA /* ScanQrcodeController.xib in Resources */,
 				7519C1FD1ED162DC00A7E4B5 /* Assets.xcassets in Resources */,
+				F844DDF61EE17F1C00891BD8 /* ScrollImagesController.xib in Resources */,
 				F881608F1EDFABAB00394D31 /* UMSocialSDKPromptResources.bundle in Resources */,
 				7519C1FB1ED162DC00A7E4B5 /* Main.storyboard in Resources */,
 				F84C797B1ED9643D00C28045 /* 广东省农村信用社@2x.png in Resources */,
@@ -1094,6 +1128,7 @@
 				F8A4AC821EDEA61F00177CD3 /* SqliteController.m in Sources */,
 				F84175DE1ED28AC500C65435 /* NSData+Base64.m in Sources */,
 				F8A4AC811EDEA61F00177CD3 /* Person.m in Sources */,
+				F844DDF51EE17F1C00891BD8 /* ScrollImagesController.m in Sources */,
 				F84175DF1ED28AC500C65435 /* NSString+Base64.m in Sources */,
 				F84175E61ED28CF700C65435 /* RSAController.m in Sources */,
 				F82D00FA1ED822B900724ADA /* SGQRCodeTool.m in Sources */,
@@ -1109,6 +1144,7 @@
 				F82D00F41ED822B900724ADA /* UIImage+SGHelper.m in Sources */,
 				F82D01081ED8243E00724ADA /* ScanQrcodeController.m in Sources */,
 				F82D00F51ED822B900724ADA /* SGQRCodeScanningVC.m in Sources */,
+				F844DDEF1EE17C8400891BD8 /* IQKeyboardManagerController.m in Sources */,
 				F82D00F81ED822B900724ADA /* SGQRCodeConst.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
