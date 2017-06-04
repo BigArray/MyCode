@@ -1,0 +1,98 @@
+1.首先注册账号获取相应的配置信息
+
+友盟开发者账号 ------ 获取 appkey
+微信开发者账号------获取 appid 和 APPSecret
+QQ 开发者账号------获取 appid 和 appkey
+
+
+2.下载友盟分享的 SDK
+　有两种方式：
+　1、官网下载 SDK，下载完成之后导入到项目中。
+　2、使用 cocoapods 集成友盟：在 Podfile中写入 pod 'UMengSocial',可以参考文档：http://www.cnblogs.com/huahua0809/p/4933536.html
+
+
+3.添加 SDK 依赖的系统库文件
+　在 Xcode 中打开工程配置文件，选择“summary”一栏，选择“Linked Frameworks and Libraries”一栏，点击“+”图标添加下面八个库文件，分别是：
+
+Security.framework
+libiconv.dylib
+SystemConfiguration.framework
+CoreGraphics.Framework
+libsqlite3.dylib
+CoreTelephony.framework
+libstdc++.dylib
+libz.dylib
+这只是其中的一部分，不同的平台依赖的系统库文件不同，根据官方文档添加即可
+
+
+4.配置 URL schemes
+　在你的工程设置项，targets一栏下，选中自己的 target，在 info->URL Types 根据官方文档添加 URL Schemes
+
+
+5.设置白名单
+　如果你的应用使用了如 SSO 授权登录或者跳转分享功能，在 iOS 9下需要增加一个可跳转的白名单，指定对应跳转 APP 的 URL Scheme，否则将在第三方平台判断是否跳转时用到的 canOpenURL 时返回 NO，进而只进行 webview 授权或者授权/分享失败
+<key>LSApplicationQueriesSchemes</key><array>
+<!-- 微信 URL Scheme 白名单-->
+<string>wechat</string>
+<string>weixin</string>
+
+<!-- 新浪微博 URL Scheme 白名单-->
+<string>sinaweibohd</string>
+<string>sinaweibo</string>
+<string>sinaweibosso</string>
+<string>weibosdk</string>
+<string>weibosdk2.5</string>
+
+<!-- QQ、Qzone URL Scheme 白名单-->
+<string>mqqapi</string>
+<string>mqq</string>
+<string>mqqOpensdkSSoLogin</string>
+<string>mqqconnect</string>
+<string>mqqopensdkdataline</string>
+<string>mqqopensdkgrouptribeshare</string>
+<string>mqqopensdkfriend</string>
+<string>mqqopensdkapi</string>
+<string>mqqopensdkapiV2</string>
+<string>mqqopensdkapiV3</string>
+<string>mqzoneopensdk</string>
+<string>wtloginmqq</string>
+<string>wtloginmqq2</string>
+<string>mqqwpa</string>
+<string>mqzone</string>
+<string>mqzonev2</string>
+<string>mqzoneshare</string>
+<string>wtloginqzone</string>
+<string>mqzonewx</string>
+<string>mqzoneopensdkapiV2</string>
+<string>mqzoneopensdkapi19</string>
+<string>mqzoneopensdkapi</string>
+<string>mqqbrowser</string>
+<string>mttbrowser</string>
+
+<!-- 人人 URL Scheme 白名单-->
+<string>renrenios</string>
+<string>renrenapi</string>
+<string>renren</string>
+<string>renreniphone</string>
+
+<!-- 来往 URL Scheme 白名单-->
+<string>laiwangsso</string>
+
+<!-- 易信 URL Scheme 白名单-->
+<string>yixin</string>
+<string>yixinopenapi</string>
+
+<!-- instagram URL Scheme 白名单-->
+<string>instagram</string>
+
+<!-- whatsapp URL Scheme 白名单-->
+<string>whatsapp</string>
+
+<!-- line URL Scheme 白名单-->
+<string>line</string>
+
+<!-- Facebook URL Scheme 白名单-->
+<string>fbapi</string>
+<string>fb-messenger-api</string>
+<string>fbauth2</string>
+<string>fbshareextension</string></array>

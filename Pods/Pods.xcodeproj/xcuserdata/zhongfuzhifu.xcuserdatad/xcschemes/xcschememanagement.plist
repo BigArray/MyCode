@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>IQKeyboardManager.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MBProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -24,10 +29,30 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SDCycleScrollView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0B4D6BCA935086FB8FF15C203A8B764F</key>
+		<key>0659B71386995AC7EE2A305F0A360EB1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>11068FD57925AD9CB8F391692EB10A5A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3D6CD94E10DE85556BEE636A69D3532D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -37,12 +62,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A99D85C11C740CE652429C8587738492</key>
+		<key>AFA317B35C874DF8DD9E2E237789BA64</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>AFAFB55453D161D2BB5CFB30C68A54D5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F4D80B5AF2826D67ECE21B8FEC731C84</key>
 		<dict>
 			<key>primary</key>
 			<true/>

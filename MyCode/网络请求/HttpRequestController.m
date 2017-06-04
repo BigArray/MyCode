@@ -18,7 +18,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    //get请求
+    [HttpTool getWithURL:@"" params:nil success:^(id json) {
+        
+    } failure:^(NSError *error) {
+        
+    }];
     
+    //post请求
+    [HttpTool postWithURL:@"" params:nil success:^(id json) {
+        
+    } failure:^(NSError *error) {
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

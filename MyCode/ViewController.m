@@ -16,6 +16,10 @@
 #import "CardNameController.h"
 #import "StringRegexController.h"
 #import "RollerCoasterController.h"
+#import "SqliteController.h"
+#import "ShareController.h"
+#import "IQKeyboardManagerController.h"
+#import "ScrollImagesController.h"
 
 
 
@@ -36,7 +40,7 @@
     
     self.navigationController.navigationBar.translucent = YES;
     
-    _nameArray = [[NSMutableArray alloc] initWithObjects:@"网络请求", @"二维码", @"rsa签名加密解密", @"银行卡名称", @"字符串正则判断", @"过山车动画", nil];
+    _nameArray = [[NSMutableArray alloc] initWithObjects:@"网络请求", @"二维码", @"rsa签名加密解密", @"银行卡名称", @"字符串正则判断", @"过山车动画", @"数据增删改查", @"友盟分享", @"IQKeyboardManager", @"轮播图", nil];
     
     [self createView];
 }
@@ -109,6 +113,31 @@
             RollerCoasterController *rcVC = [[RollerCoasterController alloc] init];
             [self.navigationController pushViewController:rcVC animated:YES];
         }
+            break;
+        case 6://数据增删改查
+        {
+            SqliteController *sqlVC = [[SqliteController alloc] init];
+            [self.navigationController pushViewController:sqlVC animated:YES];
+        }
+            break;
+        case 7://友盟分享
+        {
+            ShareController *shareVC = [[ShareController alloc] init];
+            [self.navigationController pushViewController:shareVC animated:YES];
+        }
+            break;
+        case 8://IQKeyboardManagerController
+        {
+            IQKeyboardManagerController *iqVC = [[IQKeyboardManagerController alloc] init];
+            [self.navigationController pushViewController:iqVC animated:YES];
+        }
+            break;
+        case 9://轮播图
+        {
+            ScrollImagesController *scimgVC = [[ScrollImagesController alloc] init];
+            [self.navigationController pushViewController:scimgVC animated:YES];
+        }
+            break;
             
         default:
             break;
