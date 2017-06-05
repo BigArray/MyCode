@@ -16,6 +16,10 @@
 		7519C2001ED162DC00A7E4B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7519C1FE1ED162DC00A7E4B5 /* LaunchScreen.storyboard */; };
 		7519C20B1ED162DC00A7E4B5 /* MyCodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7519C20A1ED162DC00A7E4B5 /* MyCodeTests.m */; };
 		7519C2161ED162DC00A7E4B5 /* MyCodeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7519C2151ED162DC00A7E4B5 /* MyCodeUITests.m */; };
+		7578E3051EE41D07007B5837 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7578E3011EE41D07007B5837 /* 1.png */; };
+		7578E3061EE41D07007B5837 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7578E3021EE41D07007B5837 /* 2.png */; };
+		7578E3071EE41D07007B5837 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 7578E3031EE41D07007B5837 /* 3.png */; };
+		7578E3081EE41D07007B5837 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 7578E3041EE41D07007B5837 /* 4.png */; };
 		75B88FD31ED1685200690623 /* CardNameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B88FD11ED1685200690623 /* CardNameController.m */; };
 		75B88FD41ED1685200690623 /* CardNameController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75B88FD21ED1685200690623 /* CardNameController.xib */; };
 		75B88FD61ED16D9100690623 /* bank.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75B88FD51ED16D9100690623 /* bank.plist */; };
@@ -140,6 +144,10 @@
 		7519C2111ED162DC00A7E4B5 /* MyCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7519C2151ED162DC00A7E4B5 /* MyCodeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCodeUITests.m; sourceTree = "<group>"; };
 		7519C2171ED162DC00A7E4B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7578E3011EE41D07007B5837 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		7578E3021EE41D07007B5837 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		7578E3031EE41D07007B5837 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		7578E3041EE41D07007B5837 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
 		75B88FD01ED1685200690623 /* CardNameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardNameController.h; sourceTree = "<group>"; };
 		75B88FD11ED1685200690623 /* CardNameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardNameController.m; sourceTree = "<group>"; };
 		75B88FD21ED1685200690623 /* CardNameController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardNameController.xib; sourceTree = "<group>"; };
@@ -456,6 +464,17 @@
 			path = MyCodeUITests;
 			sourceTree = "<group>";
 		};
+		7578E3001EE41D07007B5837 /* scrollimages */ = {
+			isa = PBXGroup;
+			children = (
+				7578E3011EE41D07007B5837 /* 1.png */,
+				7578E3021EE41D07007B5837 /* 2.png */,
+				7578E3031EE41D07007B5837 /* 3.png */,
+				7578E3041EE41D07007B5837 /* 4.png */,
+			);
+			path = scrollimages;
+			sourceTree = "<group>";
+		};
 		75B88FCD1ED1681600690623 /* 银行卡名称 */ = {
 			isa = PBXGroup;
 			children = (
@@ -712,6 +731,7 @@
 		F844DDF11EE17EC900891BD8 /* 轮播图 */ = {
 			isa = PBXGroup;
 			children = (
+				7578E3001EE41D07007B5837 /* scrollimages */,
 				F844DDF21EE17F1C00891BD8 /* ScrollImagesController.h */,
 				F844DDF31EE17F1C00891BD8 /* ScrollImagesController.m */,
 				F844DDF41EE17F1C00891BD8 /* ScrollImagesController.xib */,
@@ -1010,9 +1030,11 @@
 				F82D00F91ED822B900724ADA /* SGQRCode.bundle in Resources */,
 				F88160891EDFABAB00394D31 /* sharetest.png in Resources */,
 				F84C796C1ED9643D00C28045 /* 工商银行@2x.png in Resources */,
+				7578E3071EE41D07007B5837 /* 3.png in Resources */,
 				F82954BA1ED41466004457C3 /* StringRegexController.xib in Resources */,
 				F82D010E1ED825E800724ADA /* ScanSuccessController.xib in Resources */,
 				F84C796D1ED9643D00C28045 /* 建设银行@2x.png in Resources */,
+				7578E3061EE41D07007B5837 /* 2.png in Resources */,
 				F84C797F1ED9643D00C28045 /* 招商银行@2x.png in Resources */,
 				F84C79781ED9643D00C28045 /* 南京银行@2x.png in Resources */,
 				F84C79731ED9643D00C28045 /* 兴业银行@2x.png in Resources */,
@@ -1036,9 +1058,11 @@
 				F84C797A1ED9643D00C28045 /* 平安银行@2x.png in Resources */,
 				F84C79461ED90D9800C28045 /* RollerCoasterController.xib in Resources */,
 				F84C79821ED9643D00C28045 /* 江苏银行@2x.png in Resources */,
+				7578E3051EE41D07007B5837 /* 1.png in Resources */,
 				75B88FD41ED1685200690623 /* CardNameController.xib in Resources */,
 				75B88FD61ED16D9100690623 /* bank.plist in Resources */,
 				F84C796E1ED9643D00C28045 /* 民生银行@2x.png in Resources */,
+				7578E3081EE41D07007B5837 /* 4.png in Resources */,
 				F84175861ED27F9A00C65435 /* HttpRequestController.xib in Resources */,
 				F84C796A1ED9643D00C28045 /* 中信银行@2x.png in Resources */,
 				F84C79831ED9643D00C28045 /* 浦发银行@2x.png in Resources */,
