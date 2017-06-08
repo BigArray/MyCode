@@ -36,5 +36,10 @@ typedef enum {
 //私钥加密
 - (NSString *) encryptWithPriviteKey:(NSString*)content;
 
+//sha256签名
+- (NSString *)sha256SignWith:(NSString *)input;
+//sha256加密
+- (NSString *)sha256EcryptWith:(NSString *)input Key:(NSString *)key;
+
 
 @end
