@@ -20,6 +20,7 @@
 #import "ShareController.h"
 #import "IQKeyboardManagerController.h"
 #import "ScrollImagesController.h"
+#import "GIFViewController.h"
 
 
 
@@ -40,7 +41,7 @@
     
     self.navigationController.navigationBar.translucent = YES;
     
-    _nameArray = [[NSMutableArray alloc] initWithObjects:@"网络请求", @"二维码", @"rsa签名加密解密", @"银行卡名称", @"字符串正则判断", @"过山车动画", @"数据增删改查", @"友盟分享", @"IQKeyboardManager", @"轮播图", nil];
+    _nameArray = [[NSMutableArray alloc] initWithObjects:@"网络请求", @"二维码", @"rsa签名加密解密", @"银行卡名称", @"字符串正则判断", @"过山车动画", @"数据增删改查", @"友盟分享", @"IQKeyboardManager", @"轮播图", @"显示gif", nil];
     
     [self createView];
 }
@@ -138,7 +139,11 @@
             [self.navigationController pushViewController:scimgVC animated:YES];
         }
             break;
-            
+        case 10://显示gif
+        {
+            GIFViewController *gifVC = [[GIFViewController alloc] init];
+            [self.navigationController pushViewController:gifVC animated:YES];
+        }
         default:
             break;
     }
