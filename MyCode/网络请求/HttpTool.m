@@ -49,7 +49,9 @@
 
 + (AFHTTPSessionManager *)getHttpSessionManager{
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    manager.responseSerializer = [AFJSONResponseSerializer serializer];
+    manager.responseSerializer = [AFJSONResponseSerializer serializer];// 后台返回值是json
+                                  //[AFHTTPResponseSerializer serializer] //返回值是字符串用这个
+    
     manager.requestSerializer = [AFJSONRequestSerializer serializer];
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/html",@"text/json",@"text/javascript",@"text/plain", @"application/html", nil];
     

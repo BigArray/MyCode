@@ -23,6 +23,11 @@
 		75B88FD31ED1685200690623 /* CardNameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B88FD11ED1685200690623 /* CardNameController.m */; };
 		75B88FD41ED1685200690623 /* CardNameController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75B88FD21ED1685200690623 /* CardNameController.xib */; };
 		75B88FD61ED16D9100690623 /* bank.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75B88FD51ED16D9100690623 /* bank.plist */; };
+		F8267D491EEFB9BB00DFF0F6 /* test1.gif in Resources */ = {isa = PBXBuildFile; fileRef = F8267D461EEFB9BB00DFF0F6 /* test1.gif */; };
+		F8267D4A1EEFB9BB00DFF0F6 /* test2.gif in Resources */ = {isa = PBXBuildFile; fileRef = F8267D471EEFB9BB00DFF0F6 /* test2.gif */; };
+		F8267D4B1EEFB9BB00DFF0F6 /* test3.gif in Resources */ = {isa = PBXBuildFile; fileRef = F8267D481EEFB9BB00DFF0F6 /* test3.gif */; };
+		F8267D4F1EEFB9F100DFF0F6 /* GIFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8267D4D1EEFB9F100DFF0F6 /* GIFViewController.m */; };
+		F8267D501EEFB9F100DFF0F6 /* GIFViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8267D4E1EEFB9F100DFF0F6 /* GIFViewController.xib */; };
 		F82954B51ED41115004457C3 /* NSString+RegexJudge.m in Sources */ = {isa = PBXBuildFile; fileRef = F82954B41ED41115004457C3 /* NSString+RegexJudge.m */; };
 		F82954B91ED41466004457C3 /* StringRegexController.m in Sources */ = {isa = PBXBuildFile; fileRef = F82954B71ED41466004457C3 /* StringRegexController.m */; };
 		F82954BA1ED41466004457C3 /* StringRegexController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F82954B81ED41466004457C3 /* StringRegexController.xib */; };
@@ -154,6 +159,12 @@
 		75B88FD51ED16D9100690623 /* bank.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = bank.plist; sourceTree = "<group>"; };
 		77F9558A05E453B5CAEDEA73 /* libPods-MyCode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyCode.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F757463940D678AA4B2CA3 /* Pods-MyCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCode.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyCode/Pods-MyCode.release.xcconfig"; sourceTree = "<group>"; };
+		F8267D461EEFB9BB00DFF0F6 /* test1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = test1.gif; sourceTree = "<group>"; };
+		F8267D471EEFB9BB00DFF0F6 /* test2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = test2.gif; sourceTree = "<group>"; };
+		F8267D481EEFB9BB00DFF0F6 /* test3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = test3.gif; sourceTree = "<group>"; };
+		F8267D4C1EEFB9F100DFF0F6 /* GIFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIFViewController.h; sourceTree = "<group>"; };
+		F8267D4D1EEFB9F100DFF0F6 /* GIFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFViewController.m; sourceTree = "<group>"; };
+		F8267D4E1EEFB9F100DFF0F6 /* GIFViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GIFViewController.xib; sourceTree = "<group>"; };
 		F82954B31ED41115004457C3 /* NSString+RegexJudge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RegexJudge.h"; sourceTree = "<group>"; };
 		F82954B41ED41115004457C3 /* NSString+RegexJudge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RegexJudge.m"; sourceTree = "<group>"; };
 		F82954B61ED41466004457C3 /* StringRegexController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringRegexController.h; sourceTree = "<group>"; };
@@ -415,6 +426,7 @@
 		7519C1EF1ED162DC00A7E4B5 /* MyCode */ = {
 			isa = PBXGroup;
 			children = (
+				F8267D441EEFB9BB00DFF0F6 /* 显示gif */,
 				F844DDF11EE17EC900891BD8 /* 轮播图 */,
 				F844DDEB1EE17C6600891BD8 /* IQKeyboardManager */,
 				F88160731EDFABAB00394D31 /* 友盟分享 */,
@@ -494,6 +506,27 @@
 				D2F757463940D678AA4B2CA3 /* Pods-MyCode.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F8267D441EEFB9BB00DFF0F6 /* 显示gif */ = {
+			isa = PBXGroup;
+			children = (
+				F8267D451EEFB9BB00DFF0F6 /* GIF */,
+				F8267D4C1EEFB9F100DFF0F6 /* GIFViewController.h */,
+				F8267D4D1EEFB9F100DFF0F6 /* GIFViewController.m */,
+				F8267D4E1EEFB9F100DFF0F6 /* GIFViewController.xib */,
+			);
+			path = "显示gif";
+			sourceTree = "<group>";
+		};
+		F8267D451EEFB9BB00DFF0F6 /* GIF */ = {
+			isa = PBXGroup;
+			children = (
+				F8267D461EEFB9BB00DFF0F6 /* test1.gif */,
+				F8267D471EEFB9BB00DFF0F6 /* test2.gif */,
+				F8267D481EEFB9BB00DFF0F6 /* test3.gif */,
+			);
+			path = GIF;
 			sourceTree = "<group>";
 		};
 		F82954B21ED410D0004457C3 /* 字符串正则判断 */ = {
@@ -1013,11 +1046,13 @@
 			files = (
 				F84C79741ED9643D00C28045 /* 其他银行@2x.png in Resources */,
 				F84C79751ED9643D00C28045 /* 勾选@2x.png in Resources */,
+				F8267D491EEFB9BB00DFF0F6 /* test1.gif in Resources */,
 				F84C797C1ED9643D00C28045 /* 广发银行@2x.png in Resources */,
 				F84C79711ED9643D00C28045 /* 交通银行@2x.png in Resources */,
 				F84C79771ED9643D00C28045 /* 华夏银行@2x.png in Resources */,
 				F8A4AC831EDEA61F00177CD3 /* SqliteController.xib in Resources */,
 				F84C79801ED9643D00C28045 /* 普中市商业银行@2x.png in Resources */,
+				F8267D4B1EEFB9BB00DFF0F6 /* test3.gif in Resources */,
 				F88160941EDFAD4600394D31 /* shareAttention.txt in Resources */,
 				F84C79811ED9643D00C28045 /* 汉口银行@2x.png in Resources */,
 				F84C79691ED9643D00C28045 /* 东亚银行@2x.png in Resources */,
@@ -1030,6 +1065,7 @@
 				F82D00F91ED822B900724ADA /* SGQRCode.bundle in Resources */,
 				F88160891EDFABAB00394D31 /* sharetest.png in Resources */,
 				F84C796C1ED9643D00C28045 /* 工商银行@2x.png in Resources */,
+				F8267D4A1EEFB9BB00DFF0F6 /* test2.gif in Resources */,
 				7578E3071EE41D07007B5837 /* 3.png in Resources */,
 				F82954BA1ED41466004457C3 /* StringRegexController.xib in Resources */,
 				F82D010E1ED825E800724ADA /* ScanSuccessController.xib in Resources */,
@@ -1055,6 +1091,7 @@
 				F84C796B1ED9643D00C28045 /* 农业银行@2x.png in Resources */,
 				F82D01041ED8242500724ADA /* GenerateQrcodeController.xib in Resources */,
 				F84C79701ED9643D00C28045 /* 中国银行@2x.png in Resources */,
+				F8267D501EEFB9F100DFF0F6 /* GIFViewController.xib in Resources */,
 				F84C797A1ED9643D00C28045 /* 平安银行@2x.png in Resources */,
 				F84C79461ED90D9800C28045 /* RollerCoasterController.xib in Resources */,
 				F84C79821ED9643D00C28045 /* 江苏银行@2x.png in Resources */,
@@ -1156,6 +1193,7 @@
 				F84175DF1ED28AC500C65435 /* NSString+Base64.m in Sources */,
 				F84175E61ED28CF700C65435 /* RSAController.m in Sources */,
 				F82D00FA1ED822B900724ADA /* SGQRCodeTool.m in Sources */,
+				F8267D4F1EEFB9F100DFF0F6 /* GIFViewController.m in Sources */,
 				F82D00F71ED822B900724ADA /* SGWebView.m in Sources */,
 				F82D010D1ED825E800724ADA /* ScanSuccessController.m in Sources */,
 				F8A4AC801EDEA61F00177CD3 /* Z_ModelSqliteKit.m in Sources */,

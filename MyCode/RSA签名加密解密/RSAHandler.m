@@ -12,6 +12,10 @@
 #import <openssl/err.h>
 #import <openssl/md5.h>
 
+//sha256 签名加密需要
+#import <CommonCrypto/CommonDigest.h>
+#import <CommonCrypto/CommonHMAC.h>
+
 typedef enum {
     RSA_PADDING_TYPE_NONE       = RSA_NO_PADDING,
     RSA_PADDING_TYPE_PKCS1      = RSA_PKCS1_PADDING,
@@ -411,8 +415,34 @@ typedef enum {
         [result appendString:@"\n-----END PUBLIC KEY-----"];
     }
     return result;
-    
 }
 
+- (NSString *)sha256SignWith:(NSString *)input{
+    const char *s = [input cStringUsingEncoding:NSASCIIStringEncoding];
+    NSData *keyData = [NSData dataWithBytes:s length:strlen(s)];
+    
+    uint8_t digest[CC_SHA256_DIGEST_LENGTH] = {0};
+    CC_SHA256(keyData.bytes, (CC_LONG)keyData.length, digest);
+    NSData *out = [NSData dataWithBytes:digest length:CC_SHA256_DIGEST_LENGTH];
+    NSString *hash = [out description];
+    hash = [hash stringByReplacingOccurrencesOfString:@" " withString:@""];
+    hash = [hash stringByReplacingOccurrencesOfString:@"<" withString:@""];
+    hash = [hash stringByReplacingOccurrencesOfString:@">" withString:@""];
+    return hash;
+}
+- (NSString *)sha256EcryptWith:(NSString *)input Key:(NSString *)key{
+    const char *cKey  = [key cStringUsingEncoding:NSASCIIStringEncoding];
+    const char *cData = [input cStringUsingEncoding:NSASCIIStringEncoding];
+    unsigned char cHMAC[CC_SHA256_DIGEST_LENGTH];
+    CCHmac(kCCHmacAlgSHA256, cKey, strlen(cKey), cData, strlen(cData), cHMAC);
+    NSData *HMACData = [NSData dataWithBytes:cHMAC length:sizeof(cHMAC)];
+    const unsigned char *buffer = (const unsigned char *)[HMACData bytes];
+    NSMutableString *HMAC = [NSMutableString stringWithCapacity:HMACData.length * 2];
+    for (int i = 0; i < HMACData.length; ++i){
+        [HMAC appendFormat:@"%02x", buffer[i]];
+    }
+    
+    return HMAC;
+}
 
 @end

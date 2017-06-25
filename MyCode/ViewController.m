@@ -20,14 +20,17 @@
 #import "ShareController.h"
 #import "IQKeyboardManagerController.h"
 #import "ScrollImagesController.h"
+#import "GIFViewController.h"
 
 
 
-@interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
+@interface ViewController ()<UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate>
 
 @property (nonatomic, strong)UITableView *tableView;
 @property (nonatomic, strong)NSMutableArray *nameArray;
+@property (nonatomic, strong)NSMutableDictionary *dictionary;
 
+@property (nonatomic, strong)UITextField *searchText;
 
 @end
 
@@ -37,22 +40,77 @@
     [super viewDidLoad];
     
     self.title = @"封装";
-    
+    self.view.backgroundColor = [UIColor whiteColor];
     self.navigationController.navigationBar.translucent = YES;
     
-    _nameArray = [[NSMutableArray alloc] initWithObjects:@"网络请求", @"二维码", @"rsa签名加密解密", @"银行卡名称", @"字符串正则判断", @"过山车动画", @"数据增删改查", @"友盟分享", @"IQKeyboardManager", @"轮播图", nil];
+    NSDictionary *dict = @{@"网络请求":@"0",
+                           @"二维码":@"1",
+                           @"rsa签名加密解密":@"2",
+                           @"银行卡名称":@"3",
+                           @"字符串正则判断":@"4",
+                           @"过山车动画":@"5",
+                           @"数据增删改查":@"6",
+                           @"友盟分享":@"7",
+                           @"IQKeyboardManager":@"8",
+                           @"轮播图":@"9",
+                           @"显示gif":@"10"
+                           };
+    _dictionary = [NSMutableDictionary dictionaryWithDictionary:dict];
+    _nameArray = [NSMutableArray arrayWithArray:[_dictionary allKeys]];
+    
     
     [self createView];
 }
 
 - (void)createView{
-    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, Width, Height)];
+    
+    _searchText = [[UITextField alloc] initWithFrame:CGRectMake(0, 0, Width-60, 40)];
+    _searchText.center = CGPointMake(Width/2-30, 84);
+    _searchText.borderStyle = 1;
+    _searchText.delegate = self;
+    _searchText.placeholder = @"搜索";
+    
+    [self.view addSubview:_searchText];
+    
+    UIButton *searchBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+    searchBtn.frame = CGRectMake(Width-60, 64, 60, 40);
+    [searchBtn setTitle:@"搜索" forState:UIControlStateNormal];
+    [searchBtn addTarget:self action:@selector(searchBtn) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:searchBtn];
+    
+    
+    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 104, Width, Height-104)];
     _tableView.delegate = self;
     _tableView.dataSource = self;
     _tableView.tableFooterView = [[UIView alloc] init];
     [self.view addSubview:_tableView];
 }
 
+- (void)searchBtn{
+    [_searchText resignFirstResponder];
+    if (!_searchText.text || [_searchText.text isEqualToString:@""]) {
+        _nameArray = (NSMutableArray *)[_dictionary allKeys];
+        [_tableView reloadData];
+        return ;
+    }
+    
+    NSArray *array = [_dictionary allKeys];
+    NSString *str = _searchText.text;
+    
+    NSMutableArray *resultArr = [[NSMutableArray alloc] init];
+    
+    for (NSInteger i = 0; i < array.count; i++) {
+        NSString *nameStr = array[i];
+        if ([nameStr containsString:str]) {
+            [resultArr addObject:array[i]];
+        }
+    }
+    
+    _nameArray = resultArr;
+    [_tableView reloadData];
+}
+
+#pragma mark - tableview
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return _nameArray.count;
 }
@@ -70,7 +128,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    NSInteger num = indexPath.row;
+    NSInteger num = [[_dictionary objectForKey:_nameArray[indexPath.row]] integerValue];
     //跳转到不同页面
     switch (num) {
         case 0://网络请求
@@ -138,13 +196,21 @@
             [self.navigationController pushViewController:scimgVC animated:YES];
         }
             break;
-            
+        case 10://显示gif
+        {
+            GIFViewController *gifVC = [[GIFViewController alloc] init];
+            [self.navigationController pushViewController:gifVC animated:YES];
+        }
         default:
             break;
     }
 }
 
-
+#pragma mark - textfield
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
+    
+    return YES;
+}
 
 
 - (void)didReceiveMemoryWarning {
