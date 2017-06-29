@@ -21,6 +21,7 @@
 #import "IQKeyboardManagerController.h"
 #import "ScrollImagesController.h"
 #import "GIFViewController.h"
+#import "DrawImageController.h"
 
 
 
@@ -53,7 +54,8 @@
                            @"友盟分享":@"7",
                            @"IQKeyboardManager":@"8",
                            @"轮播图":@"9",
-                           @"显示gif":@"10"
+                           @"显示gif":@"10",
+                           @"手动绘图":@"11"
                            };
     _dictionary = [NSMutableDictionary dictionaryWithDictionary:dict];
     _nameArray = [NSMutableArray arrayWithArray:[_dictionary allKeys]];
@@ -201,6 +203,13 @@
             GIFViewController *gifVC = [[GIFViewController alloc] init];
             [self.navigationController pushViewController:gifVC animated:YES];
         }
+            break;
+        case 11://手动绘图
+        {
+            DrawImageController *drawVC = [[DrawImageController alloc] init];
+            [self.navigationController pushViewController:drawVC animated:YES];
+        }
+            break;
         default:
             break;
     }

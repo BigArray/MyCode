@@ -93,6 +93,9 @@
 		F84C79841ED9643D00C28045 /* 添加.png in Resources */ = {isa = PBXBuildFile; fileRef = F84C79651ED9643D00C28045 /* 添加.png */; };
 		F84C79851ED9643D00C28045 /* 渤海银行@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F84C79661ED9643D00C28045 /* 渤海银行@2x.png */; };
 		F84C79861ED9643D00C28045 /* 温州银行@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F84C79671ED9643D00C28045 /* 温州银行@2x.png */; };
+		F857C90D1F048EAB00DD766B /* DrawImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = F857C90B1F048EAB00DD766B /* DrawImageController.m */; };
+		F857C90E1F048EAB00DD766B /* DrawImageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F857C90C1F048EAB00DD766B /* DrawImageController.xib */; };
+		F857C9111F0490A400DD766B /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = F857C9101F0490A400DD766B /* MyView.m */; };
 		F88160891EDFABAB00394D31 /* sharetest.png in Resources */ = {isa = PBXBuildFile; fileRef = F88160751EDFABAB00394D31 /* sharetest.png */; };
 		F881608A1EDFABAB00394D31 /* libSocialQQ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F88160781EDFABAB00394D31 /* libSocialQQ.a */; };
 		F881608B1EDFABAB00394D31 /* libSocialUniqueId.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F881607B1EDFABAB00394D31 /* libSocialUniqueId.a */; };
@@ -327,6 +330,11 @@
 		F84C79651ED9643D00C28045 /* 添加.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "添加.png"; sourceTree = "<group>"; };
 		F84C79661ED9643D00C28045 /* 渤海银行@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "渤海银行@2x.png"; sourceTree = "<group>"; };
 		F84C79671ED9643D00C28045 /* 温州银行@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "温州银行@2x.png"; sourceTree = "<group>"; };
+		F857C90A1F048EAB00DD766B /* DrawImageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawImageController.h; sourceTree = "<group>"; };
+		F857C90B1F048EAB00DD766B /* DrawImageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawImageController.m; sourceTree = "<group>"; };
+		F857C90C1F048EAB00DD766B /* DrawImageController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DrawImageController.xib; sourceTree = "<group>"; };
+		F857C90F1F0490A400DD766B /* MyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyView.h; sourceTree = "<group>"; };
+		F857C9101F0490A400DD766B /* MyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyView.m; sourceTree = "<group>"; };
 		F88160751EDFABAB00394D31 /* sharetest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sharetest.png; sourceTree = "<group>"; };
 		F88160781EDFABAB00394D31 /* libSocialQQ.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialQQ.a; sourceTree = "<group>"; };
 		F88160791EDFABAB00394D31 /* UMSocialQQHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialQQHandler.h; sourceTree = "<group>"; };
@@ -426,6 +434,7 @@
 		7519C1EF1ED162DC00A7E4B5 /* MyCode */ = {
 			isa = PBXGroup;
 			children = (
+				F857C9091F048E8300DD766B /* 手动绘图 */,
 				F8267D441EEFB9BB00DFF0F6 /* 显示gif */,
 				F844DDF11EE17EC900891BD8 /* 轮播图 */,
 				F844DDEB1EE17C6600891BD8 /* IQKeyboardManager */,
@@ -820,6 +829,18 @@
 			path = BankImages;
 			sourceTree = "<group>";
 		};
+		F857C9091F048E8300DD766B /* 手动绘图 */ = {
+			isa = PBXGroup;
+			children = (
+				F857C90F1F0490A400DD766B /* MyView.h */,
+				F857C9101F0490A400DD766B /* MyView.m */,
+				F857C90A1F048EAB00DD766B /* DrawImageController.h */,
+				F857C90B1F048EAB00DD766B /* DrawImageController.m */,
+				F857C90C1F048EAB00DD766B /* DrawImageController.xib */,
+			);
+			path = "手动绘图";
+			sourceTree = "<group>";
+		};
 		F88160731EDFABAB00394D31 /* 友盟分享 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1051,6 +1072,7 @@
 				F84C79711ED9643D00C28045 /* 交通银行@2x.png in Resources */,
 				F84C79771ED9643D00C28045 /* 华夏银行@2x.png in Resources */,
 				F8A4AC831EDEA61F00177CD3 /* SqliteController.xib in Resources */,
+				F857C90E1F048EAB00DD766B /* DrawImageController.xib in Resources */,
 				F84C79801ED9643D00C28045 /* 普中市商业银行@2x.png in Resources */,
 				F8267D4B1EEFB9BB00DFF0F6 /* test3.gif in Resources */,
 				F88160941EDFAD4600394D31 /* shareAttention.txt in Resources */,
@@ -1182,6 +1204,7 @@
 				F82954B51ED41115004457C3 /* NSString+RegexJudge.m in Sources */,
 				F84175851ED27F9A00C65435 /* HttpRequestController.m in Sources */,
 				F84C79451ED90D9800C28045 /* RollerCoasterController.m in Sources */,
+				F857C90D1F048EAB00DD766B /* DrawImageController.m in Sources */,
 				F82D00FE1ED822DB00724ADA /* QRcodeController.m in Sources */,
 				F8A4AC7F1EDEA61F00177CD3 /* NSObject+Z_Model.m in Sources */,
 				F82954B91ED41466004457C3 /* StringRegexController.m in Sources */,
@@ -1205,6 +1228,7 @@
 				F84175811ED2746D00C65435 /* HttpTool.m in Sources */,
 				F82D00F41ED822B900724ADA /* UIImage+SGHelper.m in Sources */,
 				F82D01081ED8243E00724ADA /* ScanQrcodeController.m in Sources */,
+				F857C9111F0490A400DD766B /* MyView.m in Sources */,
 				F82D00F51ED822B900724ADA /* SGQRCodeScanningVC.m in Sources */,
 				F844DDEF1EE17C8400891BD8 /* IQKeyboardManagerController.m in Sources */,
 				F82D00F81ED822B900724ADA /* SGQRCodeConst.m in Sources */,
