@@ -362,7 +362,7 @@
 		F894BB511F0F637400B2F8B8 /* DoraemonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoraemonController.h; sourceTree = "<group>"; };
 		F894BB521F0F637400B2F8B8 /* DoraemonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoraemonController.m; sourceTree = "<group>"; };
 		F894BB531F0F637400B2F8B8 /* DoraemonController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DoraemonController.xib; sourceTree = "<group>"; };
-		F894BB561F0F66D900B2F8B8 /* Constant.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.pch; sourceTree = "<group>"; };
+		F894BB571F0F6A5D00B2F8B8 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		F8A4AC5A1EDE590400177CD3 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		F8A4AC761EDEA61F00177CD3 /* NSObject+Z_Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Z_Model.h"; sourceTree = "<group>"; };
 		F8A4AC771EDEA61F00177CD3 /* NSObject+Z_Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Z_Model.m"; sourceTree = "<group>"; };
@@ -467,7 +467,7 @@
 				7519C1FE1ED162DC00A7E4B5 /* LaunchScreen.storyboard */,
 				7519C2011ED162DC00A7E4B5 /* Info.plist */,
 				7519C1F01ED162DC00A7E4B5 /* Supporting Files */,
-				F894BB561F0F66D900B2F8B8 /* Constant.pch */,
+				F894BB571F0F6A5D00B2F8B8 /* PrefixHeader.pch */,
 			);
 			path = MyCode;
 			sourceTree = "<group>";
@@ -1419,7 +1419,7 @@
 					"$(PROJECT_DIR)/MyCode/友盟分享/UMSocial/UMSocialUI",
 				);
 				GCC_INPUT_FILETYPE = automatic;
-				GCC_PREFIX_HEADER = "/Users/zhongzhifu/Desktop/张振飞/MyCode/MyCode/Constant.pch";
+				GCC_PREFIX_HEADER = MyCode/PrefixHeader.pch;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
@@ -1458,7 +1458,7 @@
 					"$(PROJECT_DIR)/MyCode/友盟分享/UMSocial/UMSocialUI",
 				);
 				GCC_INPUT_FILETYPE = automatic;
-				GCC_PREFIX_HEADER = "/Users/zhongzhifu/Desktop/张振飞/MyCode/MyCode/Constant.pch";
+				GCC_PREFIX_HEADER = MyCode/PrefixHeader.pch;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
