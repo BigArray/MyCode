@@ -109,6 +109,10 @@
 		F88160941EDFAD4600394D31 /* shareAttention.txt in Resources */ = {isa = PBXBuildFile; fileRef = F88160931EDFAD4600394D31 /* shareAttention.txt */; };
 		F88160981EDFAE5600394D31 /* ShareController.m in Sources */ = {isa = PBXBuildFile; fileRef = F88160961EDFAE5600394D31 /* ShareController.m */; };
 		F88160991EDFAE5600394D31 /* ShareController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F88160971EDFAE5600394D31 /* ShareController.xib */; };
+		F894BB4F1F0F62CC00B2F8B8 /* BezierController.m in Sources */ = {isa = PBXBuildFile; fileRef = F894BB4D1F0F62CC00B2F8B8 /* BezierController.m */; };
+		F894BB501F0F62CC00B2F8B8 /* BezierController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F894BB4E1F0F62CC00B2F8B8 /* BezierController.xib */; };
+		F894BB541F0F637400B2F8B8 /* DoraemonController.m in Sources */ = {isa = PBXBuildFile; fileRef = F894BB521F0F637400B2F8B8 /* DoraemonController.m */; };
+		F894BB551F0F637400B2F8B8 /* DoraemonController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F894BB531F0F637400B2F8B8 /* DoraemonController.xib */; };
 		F8A4AC5B1EDE590400177CD3 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A4AC5A1EDE590400177CD3 /* libsqlite3.0.tbd */; };
 		F8A4AC7F1EDEA61F00177CD3 /* NSObject+Z_Model.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A4AC771EDEA61F00177CD3 /* NSObject+Z_Model.m */; };
 		F8A4AC801EDEA61F00177CD3 /* Z_ModelSqliteKit.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A4AC791EDEA61F00177CD3 /* Z_ModelSqliteKit.m */; };
@@ -352,6 +356,13 @@
 		F88160951EDFAE5600394D31 /* ShareController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareController.h; sourceTree = "<group>"; };
 		F88160961EDFAE5600394D31 /* ShareController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareController.m; sourceTree = "<group>"; };
 		F88160971EDFAE5600394D31 /* ShareController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShareController.xib; sourceTree = "<group>"; };
+		F894BB4C1F0F62CC00B2F8B8 /* BezierController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BezierController.h; sourceTree = "<group>"; };
+		F894BB4D1F0F62CC00B2F8B8 /* BezierController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezierController.m; sourceTree = "<group>"; };
+		F894BB4E1F0F62CC00B2F8B8 /* BezierController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BezierController.xib; sourceTree = "<group>"; };
+		F894BB511F0F637400B2F8B8 /* DoraemonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoraemonController.h; sourceTree = "<group>"; };
+		F894BB521F0F637400B2F8B8 /* DoraemonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoraemonController.m; sourceTree = "<group>"; };
+		F894BB531F0F637400B2F8B8 /* DoraemonController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DoraemonController.xib; sourceTree = "<group>"; };
+		F894BB561F0F66D900B2F8B8 /* Constant.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.pch; sourceTree = "<group>"; };
 		F8A4AC5A1EDE590400177CD3 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		F8A4AC761EDEA61F00177CD3 /* NSObject+Z_Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Z_Model.h"; sourceTree = "<group>"; };
 		F8A4AC771EDEA61F00177CD3 /* NSObject+Z_Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Z_Model.m"; sourceTree = "<group>"; };
@@ -434,6 +445,7 @@
 		7519C1EF1ED162DC00A7E4B5 /* MyCode */ = {
 			isa = PBXGroup;
 			children = (
+				F894BB4B1F0F628900B2F8B8 /* 贝塞尔曲线 */,
 				F857C9091F048E8300DD766B /* 手动绘图 */,
 				F8267D441EEFB9BB00DFF0F6 /* 显示gif */,
 				F844DDF11EE17EC900891BD8 /* 轮播图 */,
@@ -455,6 +467,7 @@
 				7519C1FE1ED162DC00A7E4B5 /* LaunchScreen.storyboard */,
 				7519C2011ED162DC00A7E4B5 /* Info.plist */,
 				7519C1F01ED162DC00A7E4B5 /* Supporting Files */,
+				F894BB561F0F66D900B2F8B8 /* Constant.pch */,
 			);
 			path = MyCode;
 			sourceTree = "<group>";
@@ -929,6 +942,19 @@
 			path = UMSocialUI;
 			sourceTree = "<group>";
 		};
+		F894BB4B1F0F628900B2F8B8 /* 贝塞尔曲线 */ = {
+			isa = PBXGroup;
+			children = (
+				F894BB4C1F0F62CC00B2F8B8 /* BezierController.h */,
+				F894BB4D1F0F62CC00B2F8B8 /* BezierController.m */,
+				F894BB4E1F0F62CC00B2F8B8 /* BezierController.xib */,
+				F894BB511F0F637400B2F8B8 /* DoraemonController.h */,
+				F894BB521F0F637400B2F8B8 /* DoraemonController.m */,
+				F894BB531F0F637400B2F8B8 /* DoraemonController.xib */,
+			);
+			path = "贝塞尔曲线";
+			sourceTree = "<group>";
+		};
 		F8A4AC741EDEA61F00177CD3 /* 数据存储 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1073,6 +1099,7 @@
 				F84C79771ED9643D00C28045 /* 华夏银行@2x.png in Resources */,
 				F8A4AC831EDEA61F00177CD3 /* SqliteController.xib in Resources */,
 				F857C90E1F048EAB00DD766B /* DrawImageController.xib in Resources */,
+				F894BB501F0F62CC00B2F8B8 /* BezierController.xib in Resources */,
 				F84C79801ED9643D00C28045 /* 普中市商业银行@2x.png in Resources */,
 				F8267D4B1EEFB9BB00DFF0F6 /* test3.gif in Resources */,
 				F88160941EDFAD4600394D31 /* shareAttention.txt in Resources */,
@@ -1096,6 +1123,7 @@
 				F84C797F1ED9643D00C28045 /* 招商银行@2x.png in Resources */,
 				F84C79781ED9643D00C28045 /* 南京银行@2x.png in Resources */,
 				F84C79731ED9643D00C28045 /* 兴业银行@2x.png in Resources */,
+				F894BB551F0F637400B2F8B8 /* DoraemonController.xib in Resources */,
 				F84C79861ED9643D00C28045 /* 温州银行@2x.png in Resources */,
 				F84C79791ED9643D00C28045 /* 宁波银行@2x.png in Resources */,
 				F84C796F1ED9643D00C28045 /* 邮政储蓄银行@2x.png in Resources */,
@@ -1207,6 +1235,7 @@
 				F857C90D1F048EAB00DD766B /* DrawImageController.m in Sources */,
 				F82D00FE1ED822DB00724ADA /* QRcodeController.m in Sources */,
 				F8A4AC7F1EDEA61F00177CD3 /* NSObject+Z_Model.m in Sources */,
+				F894BB541F0F637400B2F8B8 /* DoraemonController.m in Sources */,
 				F82954B91ED41466004457C3 /* StringRegexController.m in Sources */,
 				7519C1F51ED162DC00A7E4B5 /* AppDelegate.m in Sources */,
 				F8A4AC821EDEA61F00177CD3 /* SqliteController.m in Sources */,
@@ -1221,6 +1250,7 @@
 				F82D010D1ED825E800724ADA /* ScanSuccessController.m in Sources */,
 				F8A4AC801EDEA61F00177CD3 /* Z_ModelSqliteKit.m in Sources */,
 				75B88FD31ED1685200690623 /* CardNameController.m in Sources */,
+				F894BB4F1F0F62CC00B2F8B8 /* BezierController.m in Sources */,
 				F88160981EDFAE5600394D31 /* ShareController.m in Sources */,
 				F82D00F61ED822B900724ADA /* SGQRCodeScanningView.m in Sources */,
 				F82D01031ED8242500724ADA /* GenerateQrcodeController.m in Sources */,
@@ -1389,6 +1419,7 @@
 					"$(PROJECT_DIR)/MyCode/友盟分享/UMSocial/UMSocialUI",
 				);
 				GCC_INPUT_FILETYPE = automatic;
+				GCC_PREFIX_HEADER = "/Users/zhongzhifu/Desktop/张振飞/MyCode/MyCode/Constant.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
@@ -1427,6 +1458,7 @@
 					"$(PROJECT_DIR)/MyCode/友盟分享/UMSocial/UMSocialUI",
 				);
 				GCC_INPUT_FILETYPE = automatic;
+				GCC_PREFIX_HEADER = "/Users/zhongzhifu/Desktop/张振飞/MyCode/MyCode/Constant.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",

@@ -30,7 +30,7 @@
     NSData *gifData = [NSData dataWithContentsOfFile:path];
     
     UIWebView *webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
-    [webView setCenter:CGPointMake([UIScreen mainScreen].bounds.size.width/2, 150)];
+    [webView setCenter:CGPointMake(Width/2, 150)];
     [self.view addSubview:webView];
     webView.scalesPageToFit = YES;
     webView.scrollView.scrollEnabled = NO;
@@ -47,7 +47,7 @@
     
     UIWebView *webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
     [self.view addSubview:webView];
-    [webView setCenter:CGPointMake([UIScreen mainScreen].bounds.size.width/2, 400)];
+    [webView setCenter:CGPointMake(Width/2, 400)];
     
     [webView loadHTMLString:html baseURL:url];
     

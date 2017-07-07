@@ -22,7 +22,7 @@
     self.navigationController.interactivePopGestureRecognizer.enabled = NO;
     
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 200, 50)];
-    label.center = CGPointMake([UIScreen mainScreen].bounds.size.width/2, 200) ;
+    label.center = CGPointMake(Width/2, 200) ;
     label.text = _codeString;
     [self.view addSubview:label];
     

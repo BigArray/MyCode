@@ -6,8 +6,6 @@
 //  Copyright © 2017年 zzf. All rights reserved.
 //
 
-#define Width [UIScreen mainScreen].bounds.size.width
-#define Height [UIScreen mainScreen].bounds.size.height
 
 #import "ViewController.h"
 #import "HttpRequestController.h"
@@ -22,6 +20,7 @@
 #import "ScrollImagesController.h"
 #import "GIFViewController.h"
 #import "DrawImageController.h"
+#import "BezierController.h"
 
 
 
@@ -55,7 +54,8 @@
                            @"IQKeyboardManager":@"8",
                            @"轮播图":@"9",
                            @"显示gif":@"10",
-                           @"手动绘图":@"11"
+                           @"手动绘图":@"11",
+                           @"贝塞尔曲线":@"12"
                            };
     _dictionary = [NSMutableDictionary dictionaryWithDictionary:dict];
     _nameArray = [NSMutableArray arrayWithArray:[_dictionary allKeys]];
@@ -210,6 +210,15 @@
             [self.navigationController pushViewController:drawVC animated:YES];
         }
             break;
+        case 12://贝塞尔曲线
+        {
+            BezierController *beVC = [[BezierController alloc] init];
+            [self.navigationController pushViewController:beVC animated:YES];
+        }
+            break;
+            
+            
+            
         default:
             break;
     }

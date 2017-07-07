@@ -32,7 +32,7 @@
     UIImageView *imageView = [[UIImageView alloc] init];
     CGFloat imageViewW = 150;
     CGFloat imageViewH = 150;
-    CGFloat imageViewX = ([UIScreen mainScreen].bounds.size.width - imageViewW) / 2;
+    CGFloat imageViewX = (Width - imageViewW) / 2;
     CGFloat imageViewY = 100;
     imageView.frame =CGRectMake(imageViewX, imageViewY, imageViewW, imageViewH);
     [self.view addSubview:imageView];
@@ -61,7 +61,7 @@
     UIImageView *imageView = [[UIImageView alloc] init];
     CGFloat imageViewW = 150;
     CGFloat imageViewH = 150;
-    CGFloat imageViewX = ([UIScreen mainScreen].bounds.size.width - imageViewW) / 2;
+    CGFloat imageViewX = (Width - imageViewW) / 2;
     CGFloat imageViewY = 260;
     imageView.frame =CGRectMake(imageViewX, imageViewY, imageViewW, imageViewH);
     [self.view addSubview:imageView];
@@ -76,7 +76,7 @@
     UIImageView *imageView = [[UIImageView alloc] init];
     CGFloat imageViewW = 150;
     CGFloat imageViewH = 150;
-    CGFloat imageViewX = ([UIScreen mainScreen].bounds.size.width - imageViewW) / 2;
+    CGFloat imageViewX = (Width - imageViewW) / 2;
     CGFloat imageViewY = 420;
     imageView.frame =CGRectMake(imageViewX, imageViewY, imageViewW, imageViewH);
     [self.view addSubview:imageView];
