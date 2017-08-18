@@ -26,8 +26,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 
-#warning attention please
-    //使用时要把 enable bitCode 设置为NO
+#warning attention please 使用时要把 enable bitCode 设置为NO
     
     
     [self initHandler];
