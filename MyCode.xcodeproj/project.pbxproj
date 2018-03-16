@@ -93,6 +93,7 @@
 		F84C79841ED9643D00C28045 /* 添加.png in Resources */ = {isa = PBXBuildFile; fileRef = F84C79651ED9643D00C28045 /* 添加.png */; };
 		F84C79851ED9643D00C28045 /* 渤海银行@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F84C79661ED9643D00C28045 /* 渤海银行@2x.png */; };
 		F84C79861ED9643D00C28045 /* 温州银行@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F84C79671ED9643D00C28045 /* 温州银行@2x.png */; };
+		F8541CCE205B9C10000D87EA /* ChangePicStyleController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8541CCD205B9C10000D87EA /* ChangePicStyleController.m */; };
 		F857C90D1F048EAB00DD766B /* DrawImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = F857C90B1F048EAB00DD766B /* DrawImageController.m */; };
 		F857C90E1F048EAB00DD766B /* DrawImageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F857C90C1F048EAB00DD766B /* DrawImageController.xib */; };
 		F857C9111F0490A400DD766B /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = F857C9101F0490A400DD766B /* MyView.m */; };
@@ -334,6 +335,8 @@
 		F84C79651ED9643D00C28045 /* 添加.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "添加.png"; sourceTree = "<group>"; };
 		F84C79661ED9643D00C28045 /* 渤海银行@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "渤海银行@2x.png"; sourceTree = "<group>"; };
 		F84C79671ED9643D00C28045 /* 温州银行@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "温州银行@2x.png"; sourceTree = "<group>"; };
+		F8541CCC205B9C10000D87EA /* ChangePicStyleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChangePicStyleController.h; sourceTree = "<group>"; };
+		F8541CCD205B9C10000D87EA /* ChangePicStyleController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChangePicStyleController.m; sourceTree = "<group>"; };
 		F857C90A1F048EAB00DD766B /* DrawImageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawImageController.h; sourceTree = "<group>"; };
 		F857C90B1F048EAB00DD766B /* DrawImageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawImageController.m; sourceTree = "<group>"; };
 		F857C90C1F048EAB00DD766B /* DrawImageController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DrawImageController.xib; sourceTree = "<group>"; };
@@ -445,6 +448,7 @@
 		7519C1EF1ED162DC00A7E4B5 /* MyCode */ = {
 			isa = PBXGroup;
 			children = (
+				F8541CCB205B9BE1000D87EA /* 改变图片风格 */,
 				F894BB4B1F0F628900B2F8B8 /* 贝塞尔曲线 */,
 				F857C9091F048E8300DD766B /* 手动绘图 */,
 				F8267D441EEFB9BB00DFF0F6 /* 显示gif */,
@@ -840,6 +844,15 @@
 				F84C79671ED9643D00C28045 /* 温州银行@2x.png */,
 			);
 			path = BankImages;
+			sourceTree = "<group>";
+		};
+		F8541CCB205B9BE1000D87EA /* 改变图片风格 */ = {
+			isa = PBXGroup;
+			children = (
+				F8541CCC205B9C10000D87EA /* ChangePicStyleController.h */,
+				F8541CCD205B9C10000D87EA /* ChangePicStyleController.m */,
+			);
+			path = "改变图片风格";
 			sourceTree = "<group>";
 		};
 		F857C9091F048E8300DD766B /* 手动绘图 */ = {
@@ -1243,6 +1256,7 @@
 				F8A4AC811EDEA61F00177CD3 /* Person.m in Sources */,
 				F844DDF51EE17F1C00891BD8 /* ScrollImagesController.m in Sources */,
 				F84175DF1ED28AC500C65435 /* NSString+Base64.m in Sources */,
+				F8541CCE205B9C10000D87EA /* ChangePicStyleController.m in Sources */,
 				F84175E61ED28CF700C65435 /* RSAController.m in Sources */,
 				F82D00FA1ED822B900724ADA /* SGQRCodeTool.m in Sources */,
 				F8267D4F1EEFB9F100DFF0F6 /* GIFViewController.m in Sources */,

@@ -20,6 +20,7 @@ PODS:
   - AFNetworking/UIKit (2.6.3):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - GPUImage (0.1.7)
   - IQKeyboardManager (3.3.7)
   - MBProgressHUD (1.0.0)
   - Reachability (3.2)
@@ -31,6 +32,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
+  - GPUImage
   - IQKeyboardManager
   - MBProgressHUD
   - Reachability (~> 3.2)
@@ -38,12 +40,13 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
   IQKeyboardManager: 249c3946acf61345c18b038eb50863fe2793e3a8
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   SDCycleScrollView: e3ade90e9b3159bec04330b208fbfd81c3f3b671
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
 
-PODFILE CHECKSUM: 1878ebcf75e553c341eb941786c8def6991389fb
+PODFILE CHECKSUM: 30a45d14a7beb83f91d5a3a9da17095859ee6248
 
 COCOAPODS: 1.2.1

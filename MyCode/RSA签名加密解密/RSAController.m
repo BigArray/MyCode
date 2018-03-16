@@ -48,6 +48,14 @@
     [handler importKeyWithType:KeyTypePrivate andkeyString:private_key_string];
     [handler importKeyWithType:KeyTypePublic andkeyString:public_key_string];
     _handler = handler;
+    
+    for (NSInteger i = 0; i < 10; i++) {
+        NSString *cardNum = [handler encryptWithPublicKey:@"6217007200041832455"];
+        NSLog(@"加密 =  %@", cardNum);
+        
+        NSString *decry = [handler decryptWithPrivatecKey:cardNum];
+        NSLog(@"解密2 =  %@", decry);
+    }
 
 }
 

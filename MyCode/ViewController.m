@@ -21,6 +21,7 @@
 #import "GIFViewController.h"
 #import "DrawImageController.h"
 #import "BezierController.h"
+#import "ChangePicStyleController.h"
 
 
 
@@ -39,7 +40,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"封装";
+    self.title = @"首页";
     self.view.backgroundColor = [UIColor whiteColor];
     self.navigationController.navigationBar.translucent = YES;
     
@@ -55,7 +56,8 @@
                            @"轮播图":@"9",
                            @"显示gif":@"10",
                            @"手动绘图":@"11",
-                           @"贝塞尔曲线":@"12"
+                           @"贝塞尔曲线":@"12",
+                           @"改变图片风格":@"13"
                            };
     _dictionary = [NSMutableDictionary dictionaryWithDictionary:dict];
     _nameArray = [NSMutableArray arrayWithArray:[_dictionary allKeys]];
@@ -214,6 +216,12 @@
         {
             BezierController *beVC = [[BezierController alloc] init];
             [self.navigationController pushViewController:beVC animated:YES];
+        }
+            break;
+        case 13://改变图片风格
+        {
+            ChangePicStyleController *cpsVC = [[ChangePicStyleController alloc] init];
+            [self.navigationController pushViewController:cpsVC animated:YES];
         }
             break;
             

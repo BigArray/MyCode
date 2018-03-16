@@ -5,4 +5,5 @@ target 'MyCode' do
  pod 'MBProgressHUD'
  pod 'IQKeyboardManager'
  pod 'SDCycleScrollView','~> 1.64'
+ pod 'GPUImage'
 end
