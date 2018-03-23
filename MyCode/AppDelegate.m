@@ -32,7 +32,9 @@
     
     //设置iqmanager
     [self setIQManagerConfig];
-    
+//    NSLog(@"master");
+    NSLog(@"develop");
+//    NSLog(@"test");
     
     return YES;
 }
